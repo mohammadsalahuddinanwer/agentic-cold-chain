@@ -1,0 +1,6 @@
+Baseline,Mean Cost,Std,N,Reduction vs B1
+B1_Reactive_Rule,100.0,0.0,100.0,0.0
+B2_Centralised_Opt,76.81,14.19,100.0,23.2
+B3_Detection_Only,82.59,17.34,100.0,17.4
+B4_MAS_No_LLM,82.93,14.0,100.0,17.1
+B5_Full_System,58.85,28.09,100.0,41.2

@@ -1,0 +1,31 @@
+# Core numerics and data
+numpy
+pandas
+scipy                  # confidence intervals, exact binomial McNemar test
+scikit-learn
+joblib                 # scaler persistence
+statsmodels            # McNemar.py cross-check (optional, see README)
+
+# Deep learning / Monitor Agent
+torch
+transformers
+datasets
+accelerate
+peft
+
+# Retrieval / Diagnosis Agent
+sentence-transformers
+faiss-cpu              # or faiss-gpu if you have CUDA
+langchain
+langgraph
+openai                 # optional GPT fallback in core/llm_wrapper.py
+
+# Resolver Agent
+deap
+
+# Utilities and UI
+python-dotenv
+streamlit              # app.py demo interface only
+matplotlib
+seaborn
+tqdm

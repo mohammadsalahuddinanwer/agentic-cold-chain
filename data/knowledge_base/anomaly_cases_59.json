@@ -1,0 +1,544 @@
+[
+  {
+    "text": "Generator failed; temperature rose from 4°C to 10°C in 18 minutes. This is a power outage anomaly. Resolution: immediately dispatch backup generator, alert maintenance, notify receiver of critical delay.",
+    "metadata": {
+      "type": "power_outage",
+      "severity": "high",
+      "resolution": "dispatch_backup",
+      "pattern": "generator_failed"
+    }
+  },
+  {
+    "text": "Power failure caused refrigeration to stop; temperature rose from 4°C to 9°C in 15 minutes. Resolution: dispatch backup generator, alert maintenance, notify receiver.",
+    "metadata": {
+      "type": "power_outage",
+      "severity": "high",
+      "resolution": "dispatch_backup",
+      "pattern": "power_failure"
+    }
+  },
+  {
+    "text": "Electrical outage: temperature rose from 4°C to 8.5°C in 12 minutes. Resolution: dispatch backup generator, monitor temperature, notify receiver.",
+    "metadata": {
+      "type": "power_outage",
+      "severity": "high",
+      "resolution": "dispatch_backup",
+      "pattern": "electrical_outage"
+    }
+  },
+  {
+    "text": "The rear door was left open during a routine inspection, causing a slow temperature rise. This is a door left open anomaly. Resolution: notify driver immediately, close door, verify seal.",
+    "metadata": {
+      "type": "door_left_open",
+      "severity": "medium",
+      "resolution": "notify_driver",
+      "pattern": "rear_door_left_open"
+    }
+  },
+  {
+    "text": "Door left open during loading: temperature rose gradually from 4°C to 6.5°C over 15 minutes. Resolution: notify driver, close door, monitor temperature recovery.",
+    "metadata": {
+      "type": "door_left_open",
+      "severity": "medium",
+      "resolution": "notify_driver",
+      "pattern": "door_left_open_during_loading"
+    }
+  },
+  {
+    "text": "Door left open during unloading, temperature rose from 4°C to 5.5°C in 12 minutes. Resolution: notify driver, close door, monitor temperature.",
+    "metadata": {
+      "type": "door_left_open",
+      "severity": "medium",
+      "resolution": "notify_driver",
+      "pattern": "door_left_open_during_unloading"
+    }
+  },
+  {
+    "text": "A door seal failure caused warm air to enter, raising temperature by 2°C over 20 minutes. Resolution: notify driver, check seal, monitor temperature.",
+    "metadata": {
+      "type": "door_left_open",
+      "severity": "medium",
+      "resolution": "notify_driver",
+      "pattern": "door_seal_failure"
+    }
+  },
+  {
+    "text": "High humidity caused condensation; temperature rose from 4°C to 5.5°C. This is an extreme weather anomaly. Resolution: check door seals, adjust humidity settings, monitor for condensation.",
+    "metadata": {
+      "type": "extreme_weather",
+      "severity": "low",
+      "resolution": "adjust_humidity",
+      "pattern": "high_humidity_condensation"
+    }
+  },
+  {
+    "text": "External temperature reached 38°C; internal temperature rose from 4°C to 6.5°C. This is an extreme weather anomaly. Resolution: adjust cooling settings, monitor every 15 minutes, notify receiver.",
+    "metadata": {
+      "type": "extreme_weather",
+      "severity": "medium",
+      "resolution": "adjust_cooling",
+      "pattern": "external_temperature_38"
+    }
+  },
+  {
+    "text": "Heatwave caused internal temperature to rise from 4°C to 7°C in 30 minutes. Resolution: adjust cooling settings, monitor closely, notify receiver.",
+    "metadata": {
+      "type": "extreme_weather",
+      "severity": "medium",
+      "resolution": "adjust_cooling",
+      "pattern": "heatwave"
+    }
+  },
+  {
+    "text": "Extreme cold: external temperature dropped to -15°C; internal temperature fluctuated between 2°C and 5°C. Resolution: adjust heating settings, monitor closely, check fuel levels.",
+    "metadata": {
+      "type": "extreme_weather",
+      "severity": "low",
+      "resolution": "adjust_cooling",
+      "pattern": "extreme_cold"
+    }
+  },
+  {
+    "text": "Heavy rainfall caused humidity to spike; temperature rose from 4°C to 5.5°C. Resolution: check door seals, adjust humidity settings, monitor for condensation.",
+    "metadata": {
+      "type": "extreme_weather",
+      "severity": "low",
+      "resolution": "adjust_humidity",
+      "pattern": "heavy_rainfall_humidity"
+    }
+  },
+  {
+    "text": "Snowstorm delayed delivery; temperature rose from 4°C to 6.5°C. Resolution: adjust cooling settings, monitor temperature, notify receiver of delay.",
+    "metadata": {
+      "type": "extreme_weather",
+      "severity": "medium",
+      "resolution": "adjust_cooling",
+      "pattern": "snowstorm_delay"
+    }
+  },
+  {
+    "text": "Storm caused power fluctuations; temperature rose from 4°C to 6°C. Resolution: monitor temperature, adjust cooling, check power supply.",
+    "metadata": {
+      "type": "extreme_weather",
+      "severity": "low",
+      "resolution": "adjust_cooling",
+      "pattern": "storm_power_fluctuations"
+    }
+  },
+  {
+    "text": "GPS signal lost in rural area; temperature remained stable at 4°C. This is a GPS blackout anomaly. Resolution: switch to manual tracking, notify dispatcher, continue on planned route.",
+    "metadata": {
+      "type": "gps_blackout",
+      "severity": "low",
+      "resolution": "manual_tracking",
+      "pattern": "gps_signal_lost_rural"
+    }
+  },
+  {
+    "text": "GPS blackout due to tunnel; temperature remained stable. Resolution: wait for signal to recover, use inertial navigation, notify dispatcher.",
+    "metadata": {
+      "type": "gps_blackout",
+      "severity": "low",
+      "resolution": "manual_tracking",
+      "pattern": "gps_blackout_tunnel"
+    }
+  },
+  {
+    "text": "GPS lost due to solar flare; temperature stable. Resolution: wait for signal recovery, use manual tracking, notify dispatcher.",
+    "metadata": {
+      "type": "gps_blackout",
+      "severity": "low",
+      "resolution": "manual_tracking",
+      "pattern": "gps_lost_solar_flare"
+    }
+  },
+  {
+    "text": "GPS signal lost in urban canyon; temperature stable. Resolution: use manual tracking, notify dispatcher, continue route.",
+    "metadata": {
+      "type": "gps_blackout",
+      "severity": "low",
+      "resolution": "manual_tracking",
+      "pattern": "gps_lost_urban_canyon"
+    }
+  },
+  {
+    "text": "Driver set temperature incorrectly to 0°C instead of 4°C; corrected after 30 minutes. This is a driver error anomaly. Resolution: contact driver, correct setting, monitor temperature recovery.",
+    "metadata": {
+      "type": "driver_error",
+      "severity": "medium",
+      "resolution": "contact_driver",
+      "pattern": "driver_set_temperature_incorrectly"
+    }
+  },
+  {
+    "text": "Driver failed to close door properly; temperature rose from 4°C to 6.5°C. Resolution: contact driver, close door properly, monitor temperature.",
+    "metadata": {
+      "type": "driver_error",
+      "severity": "medium",
+      "resolution": "contact_driver",
+      "pattern": "driver_failed_to_close_door"
+    }
+  },
+  {
+    "text": "Driver left door ajar; temperature rose from 4°C to 7°C in 15 minutes. Resolution: contact driver, close door properly, monitor temperature.",
+    "metadata": {
+      "type": "driver_error",
+      "severity": "medium",
+      "resolution": "contact_driver",
+      "pattern": "driver_left_door_ajar"
+    }
+  },
+  {
+    "text": "Driver ignored temperature alarm; temperature rose from 4°C to 8°C. Resolution: contact driver immediately, investigate alarm logs, correct issue.",
+    "metadata": {
+      "type": "driver_error",
+      "severity": "high",
+      "resolution": "contact_driver",
+      "pattern": "driver_ignored_temperature_alarm"
+    }
+  },
+  {
+    "text": "Driver misread thermostat and adjusted incorrectly; temperature rose to 5.5°C. Resolution: contact driver, correct setting, monitor temperature.",
+    "metadata": {
+      "type": "driver_error",
+      "severity": "low",
+      "resolution": "contact_driver",
+      "pattern": "driver_misread_thermostat"
+    }
+  },
+  {
+    "text": "Driver turned off cooling unit by mistake; temperature rose from 4°C to 9°C. Resolution: contact driver, restart cooling unit, monitor temperature.",
+    "metadata": {
+      "type": "driver_error",
+      "severity": "high",
+      "resolution": "contact_driver",
+      "pattern": "driver_turned_off_cooling"
+    }
+  },
+  {
+    "text": "Compressor failed; temperature spiked by 3.5°C in 6 minutes. This is a compressor failure anomaly. Resolution: immediately dispatch backup reefer, reroute to nearest maintenance facility.",
+    "metadata": {
+      "type": "compressor_failure",
+      "severity": "high",
+      "resolution": "dispatch_backup",
+      "pattern": "compressor_failed"
+    }
+  },
+  {
+    "text": "Rapid temperature rise from 4°C to 8°C in under 8 minutes; refrigeration unit stopped. This is a compressor failure anomaly. Resolution: dispatch backup reefer, alert receiver.",
+    "metadata": {
+      "type": "compressor_failure",
+      "severity": "high",
+      "resolution": "dispatch_backup",
+      "pattern": "rapid_temperature_rise_refrigeration_stopped"
+    }
+  },
+  {
+    "text": "Cooling unit malfunction: temperature rose from 4°C to 9°C in 5 minutes. This is a compressor failure anomaly. Resolution: dispatch maintenance, prepare backup unit.",
+    "metadata": {
+      "type": "compressor_failure",
+      "severity": "high",
+      "resolution": "dispatch_backup",
+      "pattern": "cooling_unit_malfunction"
+    }
+  },
+  {
+    "text": "Refrigerant leak detected; temperature climbed from 4°C to 7.5°C in 10 minutes. Resolution: dispatch maintenance, check refrigerant levels, transfer cargo if needed.",
+    "metadata": {
+      "type": "compressor_failure",
+      "severity": "high",
+      "resolution": "dispatch_backup",
+      "pattern": "refrigerant_leak"
+    }
+  },
+  {
+    "text": "Compressor overheating; temperature increased from 4°C to 8.2°C in 7 minutes. Resolution: dispatch maintenance, check compressor, monitor temperature.",
+    "metadata": {
+      "type": "compressor_failure",
+      "severity": "high",
+      "resolution": "dispatch_backup",
+      "pattern": "compressor_overheating"
+    }
+  },
+  {
+    "text": "Refrigeration unit shut down; temperature rose from 4°C to 10°C in 12 minutes. Resolution: dispatch backup reefer, alert receiver.",
+    "metadata": {
+      "type": "compressor_failure",
+      "severity": "high",
+      "resolution": "dispatch_backup",
+      "pattern": "refrigeration_unit_shut_down"
+    }
+  },
+  {
+    "text": "Sensor malfunction: IoT sensor reading showed erratic temperature fluctuations (±5°C) within seconds. Resolution: cross-check with backup sensor, verify sensor calibration, replace if faulty.",
+    "metadata": {
+      "type": "sensor_malfunction",
+      "severity": "medium",
+      "resolution": "check_sensors",
+      "pattern": "sensor_malfunction_erratic"
+    }
+  },
+  {
+    "text": "Temperature sensor drift: readings slowly increasing over time. Resolution: recalibrate sensor, cross-check with manual measurement, replace if needed.",
+    "metadata": {
+      "type": "sensor_malfunction",
+      "severity": "low",
+      "resolution": "check_sensors",
+      "pattern": "sensor_drift"
+    }
+  },
+  {
+    "text": "Thermostat malfunction: temperature control inaccurate. Resolution: check thermostat, recalibrate, monitor temperature.",
+    "metadata": {
+      "type": "sensor_malfunction",
+      "severity": "medium",
+      "resolution": "check_sensors",
+      "pattern": "thermostat_malfunction"
+    }
+  },
+  {
+    "text": "Vibration anomaly: excessive vibration detected on rough terrain. Resolution: slow down, check cargo stability, monitor for packaging damage.",
+    "metadata": {
+      "type": "vibration_anomaly",
+      "severity": "low",
+      "resolution": "slow_down",
+      "pattern": "excessive_vibration"
+    }
+  },
+  {
+    "text": "Route deviation: vehicle deviated from planned route by 50 km. Resolution: verify route change, check for traffic or road closures, update ETA.",
+    "metadata": {
+      "type": "route_deviation",
+      "severity": "medium",
+      "resolution": "verify_route",
+      "pattern": "route_deviation"
+    }
+  },
+  {
+    "text": "Fuel leak: fuel consumption rate tripled unexpectedly. Resolution: stop vehicle, check for leaks, call maintenance, arrange replacement vehicle.",
+    "metadata": {
+      "type": "fuel_leak",
+      "severity": "high",
+      "resolution": "dispatch_backup",
+      "pattern": "fuel_leak"
+    }
+  },
+  {
+    "text": "Traffic congestion: vehicle stuck in traffic for 45 minutes. Temperature stable. Resolution: monitor fuel levels, update ETA, notify receiver.",
+    "metadata": {
+      "type": "traffic_congestion",
+      "severity": "low",
+      "resolution": "reroute_safest",
+      "pattern": "traffic_congestion"
+    }
+  },
+  {
+    "text": "Battery failure: auxiliary battery for IoT sensors depleted. Temperature data intermittent. Resolution: replace battery, check sensor readings, use manual logs.",
+    "metadata": {
+      "type": "battery_failure",
+      "severity": "low",
+      "resolution": "manual_tracking",
+      "pattern": "battery_failure"
+    }
+  },
+  {
+    "text": "Vaccine shipment: strict 2-8°C range required. Temperature deviation 0.5°C above threshold. Resolution: immediate driver notification, adjust cooling, check door seal.",
+    "metadata": {
+      "type": "door_left_open",
+      "severity": "high",
+      "resolution": "notify_driver",
+      "product_type": "vaccines",
+      "pattern": "vaccine_temperature_deviation"
+    }
+  },
+  {
+    "text": "Pharmaceutical shipment: 2-8°C range. Temperature rose to 9°C due to compressor cycling issue. Resolution: dispatch maintenance, check compressor, monitor temperature.",
+    "metadata": {
+      "type": "compressor_failure",
+      "severity": "high",
+      "resolution": "dispatch_backup",
+      "product_type": "pharmaceuticals",
+      "pattern": "pharmaceutical_compressor_cycling"
+    }
+  },
+  {
+    "text": "Fresh produce: 0-4°C range. Temperature rose to 5°C due to door open. Resolution: notify driver, close door, monitor spoilage risk.",
+    "metadata": {
+      "type": "door_left_open",
+      "severity": "medium",
+      "resolution": "notify_driver",
+      "product_type": "fresh_produce",
+      "pattern": "fresh_produce_door_open"
+    }
+  },
+  {
+    "text": "Frozen goods: -18°C required. Temperature rose to -15°C for 30 minutes. Resolution: immediate backup dispatch, check freezer unit, reroute to nearest cold storage.",
+    "metadata": {
+      "type": "compressor_failure",
+      "severity": "high",
+      "resolution": "dispatch_backup",
+      "product_type": "frozen",
+      "pattern": "frozen_temperature_rise"
+    }
+  },
+  {
+    "text": "Dairy products: 0-4°C range. Temperature rose to 6°C due to power fluctuation. Resolution: monitor temperature, adjust cooling, notify receiver.",
+    "metadata": {
+      "type": "power_outage",
+      "severity": "medium",
+      "resolution": "dispatch_backup",
+      "product_type": "dairy",
+      "pattern": "dairy_power_fluctuation"
+    }
+  },
+  {
+    "text": "Meat products: -2°C to 2°C range. Temperature rose to 4°C due to door open. Resolution: notify driver, close door, monitor spoilage.",
+    "metadata": {
+      "type": "door_left_open",
+      "severity": "medium",
+      "resolution": "notify_driver",
+      "product_type": "meat",
+      "pattern": "meat_door_open"
+    }
+  },
+  {
+    "text": "Seafood: -1°C to 0°C range. Temperature rose to 2°C due to power outage. Resolution: dispatch backup, monitor temperature, inspect on arrival.",
+    "metadata": {
+      "type": "power_outage",
+      "severity": "high",
+      "resolution": "dispatch_backup",
+      "product_type": "seafood",
+      "pattern": "seafood_power_outage"
+    }
+  },
+  {
+    "text": "Flowers: 2-8°C range. Temperature rose to 10°C due to extreme weather. Resolution: adjust cooling, monitor, notify receiver.",
+    "metadata": {
+      "type": "extreme_weather",
+      "severity": "medium",
+      "resolution": "adjust_cooling",
+      "product_type": "flowers",
+      "pattern": "flowers_extreme_weather"
+    }
+  },
+  {
+    "text": "Chemicals: 15-25°C range. Temperature rose to 30°C due to compressor failure. Resolution: dispatch backup, monitor, notify receiver.",
+    "metadata": {
+      "type": "compressor_failure",
+      "severity": "high",
+      "resolution": "dispatch_backup",
+      "product_type": "chemicals",
+      "pattern": "chemicals_compressor_failure"
+    }
+  },
+  {
+    "text": "Biological samples: 2-8°C range. Temperature rose to 10°C due to power outage. Resolution: immediate backup, monitor, notify receiver.",
+    "metadata": {
+      "type": "power_outage",
+      "severity": "high",
+      "resolution": "dispatch_backup",
+      "product_type": "biological",
+      "pattern": "biological_power_outage"
+    }
+  },
+  {
+    "text": "Blood products: 2-6°C range. Temperature rose to 8°C due to door left open. Resolution: notify driver, close door, monitor, inspect on arrival.",
+    "metadata": {
+      "type": "door_left_open",
+      "severity": "high",
+      "resolution": "notify_driver",
+      "product_type": "blood",
+      "pattern": "blood_door_left_open"
+    }
+  },
+  {
+    "text": "Cold start: refrigeration unit started after long idle. Temperature took 20 minutes to stabilise. Resolution: allow stabilisation, monitor closely, pre-cool before loading.",
+    "metadata": {
+      "type": "compressor_failure",
+      "severity": "low",
+      "resolution": "adjust_cooling",
+      "pattern": "cold_start"
+    }
+  },
+  {
+    "text": "Evaporator fan failure: reduced airflow causing uneven cooling. Resolution: dispatch maintenance, check fan, monitor temperature.",
+    "metadata": {
+      "type": "compressor_failure",
+      "severity": "medium",
+      "resolution": "repair_on_site",
+      "pattern": "evaporator_fan_failure"
+    }
+  },
+  {
+    "text": "Condenser fan failure: reduced heat rejection. Temperature gradually rising. Resolution: dispatch maintenance, check fan, monitor temperature.",
+    "metadata": {
+      "type": "compressor_failure",
+      "severity": "medium",
+      "resolution": "repair_on_site",
+      "pattern": "condenser_fan_failure"
+    }
+  },
+  {
+    "text": "Defrost cycle failure: ice build-up on evaporator. Temperature rising. Resolution: manual defrost, check defrost timer, monitor temperature.",
+    "metadata": {
+      "type": "compressor_failure",
+      "severity": "medium",
+      "resolution": "repair_on_site",
+      "pattern": "defrost_cycle_failure"
+    }
+  },
+  {
+    "text": "Low refrigerant pressure: cooling efficiency reduced. Temperature slowly rising. Resolution: dispatch maintenance, check refrigerant levels, monitor.",
+    "metadata": {
+      "type": "compressor_failure",
+      "severity": "medium",
+      "resolution": "repair_on_site",
+      "pattern": "low_refrigerant_pressure"
+    }
+  },
+  {
+    "text": "High refrigerant pressure: system overcharged. Temperature fluctuating. Resolution: dispatch maintenance, check pressure, adjust refrigerant.",
+    "metadata": {
+      "type": "compressor_failure",
+      "severity": "medium",
+      "resolution": "repair_on_site",
+      "pattern": "high_refrigerant_pressure"
+    }
+  },
+  {
+    "text": "Expansion valve failure: uneven cooling. Temperature fluctuating. Resolution: dispatch maintenance, check valve, monitor temperature.",
+    "metadata": {
+      "type": "compressor_failure",
+      "severity": "medium",
+      "resolution": "repair_on_site",
+      "pattern": "expansion_valve_failure"
+    }
+  },
+  {
+    "text": "Drier filter blockage: reduced refrigerant flow. Cooling efficiency reduced. Resolution: dispatch maintenance, replace filter, monitor temperature.",
+    "metadata": {
+      "type": "compressor_failure",
+      "severity": "medium",
+      "resolution": "repair_on_site",
+      "pattern": "drier_filter_blockage"
+    }
+  },
+  {
+    "text": "Door sensor fault: door open warning falsely triggered. Resolution: check sensor, monitor temperature, replace if needed.",
+    "metadata": {
+      "type": "sensor_malfunction",
+      "severity": "low",
+      "resolution": "check_sensors",
+      "pattern": "door_sensor_fault"
+    }
+  },
+  {
+    "text": "Humidity sensor fault: humidity reading inaccurate. Resolution: check sensor, recalibrate, monitor temperature.",
+    "metadata": {
+      "type": "sensor_malfunction",
+      "severity": "low",
+      "resolution": "check_sensors",
+      "pattern": "humidity_sensor_fault"
+    }
+  }
+]

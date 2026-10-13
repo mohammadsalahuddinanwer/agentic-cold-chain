@@ -1,0 +1,962 @@
+[
+  {
+    "text": "Temperature rose from 4 to 9 degrees in 15 minutes. Compressor making unusual grinding noise. No door sensors triggered. Refrigerant pressure alarm active.",
+    "ground_truth": "compressor_failure",
+    "metadata": {
+      "type": "compressor_failure",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Rapid temperature increase from 3 to 8 degrees over 12 minutes. Refrigeration unit stopped suddenly. Internal mechanical fault suspected.",
+    "ground_truth": "compressor_failure",
+    "metadata": {
+      "type": "compressor_failure",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Temperature climbed from 4 to 10 degrees in 18 minutes with loud clicking noise from compressor unit. No external factors detected.",
+    "ground_truth": "compressor_failure",
+    "metadata": {
+      "type": "compressor_failure",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Cooling capacity reduced by 70 percent. Temperature rose from 4 to 7.5 degrees in 25 minutes. Compressor running but ineffective. Refrigerant leak suspected.",
+    "ground_truth": "compressor_failure",
+    "metadata": {
+      "type": "compressor_failure",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Compressor thermal protection triggered. Temperature rose from 4 to 9 degrees in 14 minutes. No power loss. Internal mechanical overheating.",
+    "ground_truth": "compressor_failure",
+    "metadata": {
+      "type": "compressor_failure",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Temperature rising at 0.4 degrees per minute. Unusual vibration from refrigeration unit at 120Hz. Compressor bearing fault likely.",
+    "ground_truth": "compressor_failure",
+    "metadata": {
+      "type": "compressor_failure",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Evaporator fan stopped. Temperature stratification detected: 9 degrees at top, 4 degrees at bottom. Compressor running but no airflow.",
+    "ground_truth": "compressor_failure",
+    "metadata": {
+      "type": "compressor_failure",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Refrigerant pressure dropped to zero. Temperature rose from 4 to 11 degrees in 16 minutes. Hissing sound from refrigerant pipe.",
+    "ground_truth": "compressor_failure",
+    "metadata": {
+      "type": "compressor_failure",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Drive belt snapped on compressor pulley. Sudden temperature rise from 4 to 9 degrees in 10 minutes with loud snap sound.",
+    "ground_truth": "compressor_failure",
+    "metadata": {
+      "type": "compressor_failure",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Condenser coil blockage detected. Compressor overloaded and tripped. Temperature rose from 3 to 8 degrees in 18 minutes.",
+    "ground_truth": "compressor_failure",
+    "metadata": {
+      "type": "compressor_failure",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Scroll compressor failure. Abnormal vibration, cooling capacity fell 65 percent. Temperature rose from 4 to 8.5 degrees in 22 minutes.",
+    "ground_truth": "compressor_failure",
+    "metadata": {
+      "type": "compressor_failure",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Motor windings burned out. Burning smell detected. Temperature rose from 4 to 9 degrees in 11 minutes. Engine unaffected.",
+    "ground_truth": "compressor_failure",
+    "metadata": {
+      "type": "compressor_failure",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Expansion valve stuck closed. Compressor running but no cooling. Temperature climbed from 4 to 8 degrees in 14 minutes.",
+    "ground_truth": "compressor_failure",
+    "metadata": {
+      "type": "compressor_failure",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Refrigeration unit cycling on and off every 4 minutes. Temperature oscillating between 4 and 8 degrees. Thermal overload fault.",
+    "ground_truth": "compressor_failure",
+    "metadata": {
+      "type": "compressor_failure",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Temperature rose from 4 to 9.5 degrees rapidly. Compressor clutch failed. No door events. No external weather issues.",
+    "ground_truth": "compressor_failure",
+    "metadata": {
+      "type": "compressor_failure",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Low refrigerant pressure warning. Temperature slowly rising from 4 to 6.5 degrees over 40 minutes. Gradual compressor efficiency loss.",
+    "ground_truth": "compressor_failure",
+    "metadata": {
+      "type": "compressor_failure",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Refrigerant overcharge caused high pressure shutdown. Temperature rose from 4 to 10 degrees in 16 minutes. Mechanical system fault.",
+    "ground_truth": "compressor_failure",
+    "metadata": {
+      "type": "compressor_failure",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Temperature rose from 4 to 8 degrees in 20 minutes. Compressor running at 120 percent capacity before thermal trip.",
+    "ground_truth": "compressor_failure",
+    "metadata": {
+      "type": "compressor_failure",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Evaporator completely iced over. Airflow blocked. Temperature rose from 4 to 7 degrees in 30 minutes despite compressor running.",
+    "ground_truth": "compressor_failure",
+    "metadata": {
+      "type": "compressor_failure",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Compressor motor seized. No cooling output. Temperature rose from 4 to 10 degrees in 13 minutes. Grinding mechanical sound.",
+    "ground_truth": "compressor_failure",
+    "metadata": {
+      "type": "compressor_failure",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "All vehicle electrical systems failed simultaneously. Temperature rose from 4 to 10 degrees in 22 minutes. Total power loss.",
+    "ground_truth": "power_outage",
+    "metadata": {
+      "type": "power_outage",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Engine stopped due to fuel exhaustion. All power including refrigeration lost. Temperature rose from 4 to 9 degrees in 20 minutes.",
+    "ground_truth": "power_outage",
+    "metadata": {
+      "type": "power_outage",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Alternator failure caused complete battery drain. Total electrical blackout to all systems. Temperature rising rapidly.",
+    "ground_truth": "power_outage",
+    "metadata": {
+      "type": "power_outage",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Lightning strike tripped all circuit breakers. Complete vehicle power loss. Temperature rose from 4 to 8 degrees in 19 minutes.",
+    "ground_truth": "power_outage",
+    "metadata": {
+      "type": "power_outage",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Shore power disconnected at depot. Temporary 4-minute gap before engine power. Temperature rose from 4 to 5.2 degrees.",
+    "ground_truth": "power_outage",
+    "metadata": {
+      "type": "power_outage",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Main fuse bank failed. All electrical systems including refrigeration lost power. Temperature rising at 0.4 degrees per minute.",
+    "ground_truth": "power_outage",
+    "metadata": {
+      "type": "power_outage",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Engine overheated and shutdown. Simultaneous loss of refrigeration and all cabin systems. Temperature rose from 4 to 9.5 degrees.",
+    "ground_truth": "power_outage",
+    "metadata": {
+      "type": "power_outage",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Battery terminals corroded causing complete power interruption. All systems offline simultaneously. Temperature rose 5 degrees in 22 minutes.",
+    "ground_truth": "power_outage",
+    "metadata": {
+      "type": "power_outage",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Power Management Unit fault caused total electrical shutdown. Temperature rose from 4 to 8.5 degrees in 18 minutes.",
+    "ground_truth": "power_outage",
+    "metadata": {
+      "type": "power_outage",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Auxiliary Power Unit battery depleted overnight. Refrigeration lost all power at 2am. Temperature rose to 9 degrees by morning.",
+    "ground_truth": "power_outage",
+    "metadata": {
+      "type": "power_outage",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Wiring harness short circuit caused total power failure. Cabin and refrigeration systems both lost power simultaneously.",
+    "ground_truth": "power_outage",
+    "metadata": {
+      "type": "power_outage",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Generator failed to start during grid power outage. No backup power. Temperature rose from 4 to 8 degrees in 20 minutes.",
+    "ground_truth": "power_outage",
+    "metadata": {
+      "type": "power_outage",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Inverter failure cut power to refrigeration controller. All systems defaulted to off. Temperature rose from 4 to 8 degrees.",
+    "ground_truth": "power_outage",
+    "metadata": {
+      "type": "power_outage",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Refrigeration fuse bank blown by power surge. Complete electrical loss to cooling unit. Temperature rose from 4 to 9 degrees.",
+    "ground_truth": "power_outage",
+    "metadata": {
+      "type": "power_outage",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Total power loss during motorway transit. Vehicle pulled over. All electronics offline. Temperature rising rapidly from 4 degrees.",
+    "ground_truth": "power_outage",
+    "metadata": {
+      "type": "power_outage",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Scheduled maintenance accidentally cut power 2 hours early. Temperature rose from 4 to 7 degrees before error discovered.",
+    "ground_truth": "power_outage",
+    "metadata": {
+      "type": "power_outage",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Electrical control unit failure. Complete shutdown of all vehicle systems. Temperature rose from 4 to 8.5 degrees in 21 minutes.",
+    "ground_truth": "power_outage",
+    "metadata": {
+      "type": "power_outage",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "APU electrical fault caused cascading shutdown of all systems. Temperature rose from 4 to 9 degrees during overnight delivery.",
+    "ground_truth": "power_outage",
+    "metadata": {
+      "type": "power_outage",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Vehicle collision damaged electrical supply. All systems powered down. Refrigeration lost. Temperature rose from 4 to 10 degrees.",
+    "ground_truth": "power_outage",
+    "metadata": {
+      "type": "power_outage",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Fuel pump failure caused engine stop. All vehicle power lost simultaneously. Temperature rising from 4 degrees at 0.35 per minute.",
+    "ground_truth": "power_outage",
+    "metadata": {
+      "type": "power_outage",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Temperature rose gradually from 4 to 6 degrees over 18 minutes. Door sensor shows rear door open. No equipment fault.",
+    "ground_truth": "door_left_open",
+    "metadata": {
+      "type": "door_left_open",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Slow temperature rise from 4 to 5.5 degrees over 22 minutes. Door ajar during rest stop. Ambient temperature 26 degrees.",
+    "ground_truth": "door_left_open",
+    "metadata": {
+      "type": "door_left_open",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Temperature increasing at 0.1 degrees per minute. Driver forgot to close rear door after delivery. No mechanical fault.",
+    "ground_truth": "door_left_open",
+    "metadata": {
+      "type": "door_left_open",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Gradual temperature rise from 3.5 to 6.2 degrees. Side door left open during loading. Human oversight confirmed.",
+    "ground_truth": "door_left_open",
+    "metadata": {
+      "type": "door_left_open",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Temperature rose from 4 to 5.8 degrees over 20 minutes. Door hinge damaged allowing 3cm gap. Warm ambient air entering.",
+    "ground_truth": "door_left_open",
+    "metadata": {
+      "type": "door_left_open",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Slow temperature increase from 4 to 6.5 degrees. Roller door partially raised during transit. Physical door breach.",
+    "ground_truth": "door_left_open",
+    "metadata": {
+      "type": "door_left_open",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Temperature rose gradually from 4 to 5.7 degrees. Door seal torn by forklift. Cold air escaping through damaged seal.",
+    "ground_truth": "door_left_open",
+    "metadata": {
+      "type": "door_left_open",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Temperature increasing slowly. Double doors misaligned leaving 5cm gap. Warm air ingress confirmed. No compressor fault.",
+    "ground_truth": "door_left_open",
+    "metadata": {
+      "type": "door_left_open",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Temperature rose from 4 to 6.8 degrees over 30 minutes. Door left open overnight at depot. Ambient 18 degrees.",
+    "ground_truth": "door_left_open",
+    "metadata": {
+      "type": "door_left_open",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Slow rise from 4 to 5.2 degrees. Auxiliary cooling unit door open during pre-cooling. Cargo not yet loaded.",
+    "ground_truth": "door_left_open",
+    "metadata": {
+      "type": "door_left_open",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Temperature rising at 0.2 degrees per minute. Door lock mechanism failed during transit. Physical door breach.",
+    "ground_truth": "door_left_open",
+    "metadata": {
+      "type": "door_left_open",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Gradual temperature rise during multi-drop delivery. Door sensor triggered multiple times. Cumulative rise from 4 to 7 degrees.",
+    "ground_truth": "door_left_open",
+    "metadata": {
+      "type": "door_left_open",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Temperature rose from 4 to 5.9 degrees. Tail-lift door sensor malfunction showing closed when actually open 8cm.",
+    "ground_truth": "door_left_open",
+    "metadata": {
+      "type": "door_left_open",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Slow temperature increase. Rear door open 10 minutes at pharmacy. Ambient 26 degrees. Refrigeration working normally.",
+    "ground_truth": "door_left_open",
+    "metadata": {
+      "type": "door_left_open",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Temperature rose from 4 to 6.3 degrees over 25 minutes. Door ajar confirmed by visual inspection. No mechanical fault.",
+    "ground_truth": "door_left_open",
+    "metadata": {
+      "type": "door_left_open",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Gradual rise from 4 to 5.4 degrees. Side access door left open after multi-drop delivery. Physical door breach.",
+    "ground_truth": "door_left_open",
+    "metadata": {
+      "type": "door_left_open",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Temperature increasing slowly from 4 to 6.1 degrees. Door frame distorted after minor collision. Gap allowing warm air.",
+    "ground_truth": "door_left_open",
+    "metadata": {
+      "type": "door_left_open",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Slow temperature rise. Driver propped door open with cargo box during urban delivery. Door open confirmed by sensor.",
+    "ground_truth": "door_left_open",
+    "metadata": {
+      "type": "door_left_open",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Temperature rose from 4 to 5.6 degrees. Refrigeration working normally. Door sensor active. Physical breach confirmed.",
+    "ground_truth": "door_left_open",
+    "metadata": {
+      "type": "door_left_open",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Gradual temperature increase from 4 to 6.4 degrees over 24 minutes. Hospital delivery door left open. No equipment fault.",
+    "ground_truth": "door_left_open",
+    "metadata": {
+      "type": "door_left_open",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Thermostat set to minus 4 degrees instead of 4 degrees. Temperature dropped to minus 1 degree. Freeze risk to vaccines.",
+    "ground_truth": "driver_error",
+    "metadata": {
+      "type": "driver_error",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Driver switched off refrigeration to save fuel. Temperature rose from 4 to 9 degrees over 35 minutes. Deliberate action.",
+    "ground_truth": "driver_error",
+    "metadata": {
+      "type": "driver_error",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Driver parked in direct sunlight for 90 minutes. Temperature rose from 4 to 8 degrees. Human negligent parking decision.",
+    "ground_truth": "driver_error",
+    "metadata": {
+      "type": "driver_error",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Cargo overloaded blocking airflow. Temperature gradient detected. 4 degrees at probe, 8.5 degrees at cargo surface.",
+    "ground_truth": "driver_error",
+    "metadata": {
+      "type": "driver_error",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Driver accepted unauthorised ambient cargo. Warm parcels raised temperature from 4 to 6.5 degrees. Protocol violation.",
+    "ground_truth": "driver_error",
+    "metadata": {
+      "type": "driver_error",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Temperature alarm acknowledged without investigation 3 times. Temperature rose from 6 to 10 degrees over 20 minutes.",
+    "ground_truth": "driver_error",
+    "metadata": {
+      "type": "driver_error",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Driver departed without pre-cooling. Cargo compartment at 12 degrees at start. Human procedural failure.",
+    "ground_truth": "driver_error",
+    "metadata": {
+      "type": "driver_error",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Hot food items loaded alongside cold cargo. Heat transfer raised temperature from 4 to 7 degrees. Loading error.",
+    "ground_truth": "driver_error",
+    "metadata": {
+      "type": "driver_error",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Wrong cargo type entered in system. Blood product profile applied instead of vaccine profile. Human data entry error.",
+    "ground_truth": "driver_error",
+    "metadata": {
+      "type": "driver_error",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Driver did not report refrigeration warning light for 45 minutes. Temperature rose from 4 to 8.5 degrees. Delayed reporting.",
+    "ground_truth": "driver_error",
+    "metadata": {
+      "type": "driver_error",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Driver activated standby mode incorrectly. Temperature rose from 4 to 8 degrees in 30 minutes. Wrong mode selected.",
+    "ground_truth": "driver_error",
+    "metadata": {
+      "type": "driver_error",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Unit left in defrost mode from previous journey. Temperature at 12 degrees at departure. Pre-trip check not completed.",
+    "ground_truth": "driver_error",
+    "metadata": {
+      "type": "driver_error",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Extended route by 90 minutes without updating cooling settings. Temperature rose to 7.5 degrees. Human route error.",
+    "ground_truth": "driver_error",
+    "metadata": {
+      "type": "driver_error",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Driver propped door open with box during multi-drop. Cumulative temperature rise from 4 to 7 degrees over 5 stops.",
+    "ground_truth": "driver_error",
+    "metadata": {
+      "type": "driver_error",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Refrigeration settings incorrectly configured at start of shift. Temperature 6 degrees throughout journey not 4 degrees.",
+    "ground_truth": "driver_error",
+    "metadata": {
+      "type": "driver_error",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Driver collected additional cargo from unauthorised location without reporting. Temperature exceeded range during detour.",
+    "ground_truth": "driver_error",
+    "metadata": {
+      "type": "driver_error",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Manual override of temperature alarm by driver. System continued to alert but driver disabled notifications.",
+    "ground_truth": "driver_error",
+    "metadata": {
+      "type": "driver_error",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Driver did not perform mandatory pre-departure check. Refrigeration fault undetected for 2 hours into journey.",
+    "ground_truth": "driver_error",
+    "metadata": {
+      "type": "driver_error",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Wrong temperature setpoint entered at start of journey. System cooling to 8 degrees not 4 degrees for 3 hours.",
+    "ground_truth": "driver_error",
+    "metadata": {
+      "type": "driver_error",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Driver used personal device to bypass fleet management system. Tracking and temperature alerts suppressed for 45 minutes.",
+    "ground_truth": "driver_error",
+    "metadata": {
+      "type": "driver_error",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Ambient temperature 42 degrees. Refrigeration at maximum capacity but temperature rose from 4 to 6.8 degrees over 45 minutes. External heat load.",
+    "ground_truth": "extreme_weather",
+    "metadata": {
+      "type": "extreme_weather",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Flash flood. Vehicle drove through 30cm water. Refrigeration intake submerged. Temperature rose from 4 to 7.5 degrees.",
+    "ground_truth": "extreme_weather",
+    "metadata": {
+      "type": "extreme_weather",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "85 km/h crosswind on bridge reversed refrigeration air intake. Cooling efficiency dropped 40 percent. Temperature rose from 4 to 6.2 degrees.",
+    "ground_truth": "extreme_weather",
+    "metadata": {
+      "type": "extreme_weather",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Sandstorm blocked condenser fins. Cooling capacity fell 55 percent. Temperature rose from 4 to 7.8 degrees. External environmental cause.",
+    "ground_truth": "extreme_weather",
+    "metadata": {
+      "type": "extreme_weather",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Dense fog with 98 percent humidity caused evaporator icing. Airflow restricted. Temperature rose from 4 to 6.5 degrees.",
+    "ground_truth": "extreme_weather",
+    "metadata": {
+      "type": "extreme_weather",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Hailstorm damaged roof insulation. Heat ingress increased. Temperature rose from 4 to 8 degrees in 28 minutes.",
+    "ground_truth": "extreme_weather",
+    "metadata": {
+      "type": "extreme_weather",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Wildfire smoke caused safety shutdown of refrigeration air intake. Temperature rose from 4 to 9 degrees in 22 minutes.",
+    "ground_truth": "extreme_weather",
+    "metadata": {
+      "type": "extreme_weather",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Warm night 30 degrees ambient at 2am. Refrigeration at maximum capacity. Temperature crept from 4 to 5.8 degrees.",
+    "ground_truth": "extreme_weather",
+    "metadata": {
+      "type": "extreme_weather",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Road surface temperature 65 degrees. Radiant heat from tarmac affected floor-level cargo. Temperature rose from 4 to 6.5 degrees.",
+    "ground_truth": "extreme_weather",
+    "metadata": {
+      "type": "extreme_weather",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Tropical storm 38 degrees and 95 percent humidity. Refrigeration overwhelmed. Temperature rose from 4 to 7.2 degrees.",
+    "ground_truth": "extreme_weather",
+    "metadata": {
+      "type": "extreme_weather",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Desert crossing in summer. Solar radiation 180W/m2. Refrigeration at 98 percent capacity. Temperature crept from 4 to 5.9 degrees.",
+    "ground_truth": "extreme_weather",
+    "metadata": {
+      "type": "extreme_weather",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Volcanic ash cloud reduced solar panel efficiency. Battery depleted faster. Temperature rose from 4 to 6.8 degrees.",
+    "ground_truth": "extreme_weather",
+    "metadata": {
+      "type": "extreme_weather",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Temperature rose slowly from 4 to 6.1 degrees. Tropical storm with high humidity. Refrigeration working but overwhelmed by external heat.",
+    "ground_truth": "extreme_weather",
+    "metadata": {
+      "type": "extreme_weather",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Snow and ice storm reduced vehicle speed to 10 km/h. Prolonged exposure caused temperature to rise from 4 to 6 degrees.",
+    "ground_truth": "extreme_weather",
+    "metadata": {
+      "type": "extreme_weather",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Extreme heat event. All nearby vehicles reporting temperature anomalies. External environmental cause confirmed.",
+    "ground_truth": "extreme_weather",
+    "metadata": {
+      "type": "extreme_weather",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Temperature rose from 4 to 7 degrees. Strong solar radiation on south-facing roof panel during stationary wait at border crossing.",
+    "ground_truth": "extreme_weather",
+    "metadata": {
+      "type": "extreme_weather",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Cold snap caused ice formation on external cooling fins. Heat exchange efficiency reduced. Temperature rose from 4 to 5.8 degrees.",
+    "ground_truth": "extreme_weather",
+    "metadata": {
+      "type": "extreme_weather",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Temperature rose from 4 to 6.5 degrees. Recorded hottest day of year. All refrigerated vehicles in fleet reporting higher than normal temperatures.",
+    "ground_truth": "extreme_weather",
+    "metadata": {
+      "type": "extreme_weather",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Heavy rain reduced condenser efficiency. Humidity 97 percent. Temperature rose from 4 to 5.9 degrees. External weather event.",
+    "ground_truth": "extreme_weather",
+    "metadata": {
+      "type": "extreme_weather",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Temperature rose from 4 to 7.8 degrees during heatwave. Refrigeration working correctly. External heat load exceeded design capacity.",
+    "ground_truth": "extreme_weather",
+    "metadata": {
+      "type": "extreme_weather",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "GPS signal lost for 8 minutes in tunnel. Temperature completely stable at 4 degrees throughout. Navigation issue only.",
+    "ground_truth": "gps_blackout",
+    "metadata": {
+      "type": "gps_blackout",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "GPS antenna damaged by debris. Signal lost 35 minutes. Temperature maintained at 4 degrees. Location tracking issue.",
+    "ground_truth": "gps_blackout",
+    "metadata": {
+      "type": "gps_blackout",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Solar storm degraded GPS signal for 45 minutes. Position accuracy degraded. Temperature stable. External interference.",
+    "ground_truth": "gps_blackout",
+    "metadata": {
+      "type": "gps_blackout",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "GPS firmware crash during update. 18-minute blackout while rebooting. Temperature stable at 4 degrees throughout.",
+    "ground_truth": "gps_blackout",
+    "metadata": {
+      "type": "gps_blackout",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Urban canyon multipath errors. GPS position jumping 2km. Unusable for 25 minutes. Temperature completely stable.",
+    "ground_truth": "gps_blackout",
+    "metadata": {
+      "type": "gps_blackout",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "GPS jammer near military base. All vehicles in 3km radius lost signal 12 minutes. Temperature unaffected at 4 degrees.",
+    "ground_truth": "gps_blackout",
+    "metadata": {
+      "type": "gps_blackout",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "GPS module water ingress. Permanent failure for remainder of delivery. Temperature normal via cellular IoT.",
+    "ground_truth": "gps_blackout",
+    "metadata": {
+      "type": "gps_blackout",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "RF interference from broadcasting tower overwhelmed GPS. 8-minute blackout. Temperature stable via separate cellular sensor.",
+    "ground_truth": "gps_blackout",
+    "metadata": {
+      "type": "gps_blackout",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "GPS power fuse blown. Tracker offline 55 minutes. Temperature stable at 4 degrees. Driver used phone navigation.",
+    "ground_truth": "gps_blackout",
+    "metadata": {
+      "type": "gps_blackout",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Mountain pass terrain blocked GPS signal 32 minutes. Temperature stable at 4 degrees. No thermal anomaly.",
+    "ground_truth": "gps_blackout",
+    "metadata": {
+      "type": "gps_blackout",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "GPS SIM card data exhausted mid-delivery. No position updates 67 minutes. Temperature IoT continued via separate SIM.",
+    "ground_truth": "gps_blackout",
+    "metadata": {
+      "type": "gps_blackout",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "GPS spoofing attack near secure facility. False position detected. Temperature unaffected. Security incident reported.",
+    "ground_truth": "gps_blackout",
+    "metadata": {
+      "type": "gps_blackout",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "GPS receiver overheated in cab sunlight. Thermal shutdown 25 minutes. Temperature cargo stable at 4 degrees.",
+    "ground_truth": "gps_blackout",
+    "metadata": {
+      "type": "gps_blackout",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Underground hospital car park. GPS lost 18 minutes during delivery. Temperature stable throughout.",
+    "ground_truth": "gps_blackout",
+    "metadata": {
+      "type": "gps_blackout",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Incompatible replacement GPS module. No tracking data for full 6-hour shift. Temperature IoT normal via cellular.",
+    "ground_truth": "gps_blackout",
+    "metadata": {
+      "type": "gps_blackout",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "GPS signal lost. Location tracking unavailable. Temperature sensor readings normal at 4 degrees. Cargo unaffected.",
+    "ground_truth": "gps_blackout",
+    "metadata": {
+      "type": "gps_blackout",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Dense building coverage in city centre. GPS unreliable for 40 minutes. Temperature monitoring continued normally.",
+    "ground_truth": "gps_blackout",
+    "metadata": {
+      "type": "gps_blackout",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Satellite maintenance window reduced European coverage. GPS unavailable 22 minutes. Temperature stable via IoT.",
+    "ground_truth": "gps_blackout",
+    "metadata": {
+      "type": "gps_blackout",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "GPS connection dropped repeatedly during cross-border transit. Temperature completely unaffected at 4 degrees.",
+    "ground_truth": "gps_blackout",
+    "metadata": {
+      "type": "gps_blackout",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "GPS blackout confirmed. No position data for 30 minutes. Temperature sensor showing stable 4 degrees throughout.",
+    "ground_truth": "gps_blackout",
+    "metadata": {
+      "type": "gps_blackout",
+      "source": "synthetic"
+    }
+  }
+]

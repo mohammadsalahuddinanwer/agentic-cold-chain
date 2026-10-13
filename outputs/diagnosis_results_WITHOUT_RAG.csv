@@ -1,0 +1,61 @@
+case_id,text,ground_truth,predicted,confidence,correct,mode
+1,Snowstorm delayed delivery; temperature rose from 4°C to 6.5°C.,extreme_weather,extreme_weather,0.7,True,WITHOUT RAG
+2,GPS lost due to solar flare; temperature stable.,gps_blackout,gps_blackout,0.7,True,WITHOUT RAG
+3,Driver ignored temperature alarm; temperature rose from 4°C to 8°C.,driver_error,driver_error,0.7,True,WITHOUT RAG
+4,Driver turned off cooling unit by mistake; temperature rose from 4°C to 9°C.,driver_error,temperature_anomaly,0.9,False,WITHOUT RAG
+5,Cooling unit malfunction: temperature rose from 4°C to 9°C in 5 minutes.,compressor_failure,compressor_failure,0.7,True,WITHOUT RAG
+6,Driver forgot to close door after checking load; temperature rose to 6.2°C.,door_left_open,door_left_open,0.7,True,WITHOUT RAG
+7,Door left ajar during temperature check; temperature rose from 4°C to 5.8°C.,door_left_open,door_left_open,0.7,True,WITHOUT RAG
+8,"Door seal degraded, causing gradual temperature rise of 0.5°C per minute.",door_left_open,door_left_open,0.7,True,WITHOUT RAG
+9,Compressor belt snapped; temperature rose from 4°C to 9.5°C in 8 minutes.,compressor_failure,compressor_failure,0.9,True,WITHOUT RAG
+10,Main power outage; temperature rose from 4°C to 10.5°C in 22 minutes.,power_outage,power_outage,0.7,True,WITHOUT RAG
+11,GPS signal lost for 45 minutes; temperature stable at 4°C.,gps_blackout,gps_blackout,0.7,True,WITHOUT RAG
+12,GPS signal lost in underground parking; temperature stable.,gps_blackout,gps_blackout,0.7,True,WITHOUT RAG
+13,Compressor seized; temperature rose from 4°C to 8.7°C in 9 minutes.,compressor_failure,compressor_failure,0.7,True,WITHOUT RAG
+14,Driver failed to report temperature issue; temperature rose to 6.8°C.,driver_error,driver_error,0.7,True,WITHOUT RAG
+15,Satellite signal lost; temperature remained stable.,gps_blackout,gps_blackout,0.7,True,WITHOUT RAG
+16,Driver left door ajar; temperature rose from 4°C to 7°C in 15 minutes.,driver_error,door_left_open,0.7,False,WITHOUT RAG
+17,GPS blackout in remote area; temperature stable.,gps_blackout,gps_blackout,0.7,True,WITHOUT RAG
+18,GPS lost due to solar flare; temperature stable.,gps_blackout,gps_blackout,0.7,True,WITHOUT RAG
+19,GPS antenna malfunction; temperature stable.,gps_blackout,gps_blackout,0.7,True,WITHOUT RAG
+20,Door seal leaking; temperature rose from 4°C to 6.3°C over 22 minutes.,door_left_open,door_left_open,0.7,True,WITHOUT RAG
+21,Cooling system failure; temperature rose from 4°C to 11°C in 15 minutes.,compressor_failure,cooling_system_failure,0.8,True,WITHOUT RAG
+22,Driver set temperature incorrectly to 0°C instead of 4°C; corrected after 30 minutes.,driver_error,driver_error,0.7,True,WITHOUT RAG
+23,GPS blackout due to tunnel; temperature remained stable.,gps_blackout,gps_blackout,0.7,True,WITHOUT RAG
+24,Compressor fan failure; temperature rose from 4°C to 7°C in 9 minutes.,compressor_failure,compressor_failure,0.9,True,WITHOUT RAG
+25,Power surge caused refrigeration unit to restart; temperature rose from 4°C to 7°C.,power_outage,compressor_failure,0.7,False,WITHOUT RAG
+26,Compressor belt snapped; temperature rose from 4°C to 9.5°C in 8 minutes.,compressor_failure,compressor_failure,0.7,True,WITHOUT RAG
+27,Driver reported door ajar; temperature increased from 4°C to 6°C in 10 minutes.,door_left_open,door_left_open,0.7,True,WITHOUT RAG
+28,GPS signal lost in rural area; temperature remained stable at 4°C.,gps_blackout,gps_blackout,0.7,True,WITHOUT RAG
+29,Heatwave caused internal temperature to rise from 4°C to 7°C in 30 minutes.,extreme_weather,extreme_weather,0.7,True,WITHOUT RAG
+30,GPS signal lost for 45 minutes; temperature stable at 4°C.,gps_blackout,gps_blackout,0.7,True,WITHOUT RAG
+31,Electrical fault caused cooling system shutdown; temperature rose to 8.5°C.,power_outage,compressor_failure,0.7,False,WITHOUT RAG
+32,GPS lost due to solar flare; temperature stable.,gps_blackout,solar_flare_interference,0.6,False,WITHOUT RAG
+33,"Door seal degraded, causing gradual temperature rise of 0.5°C per minute.",door_left_open,door_left_open,0.7,True,WITHOUT RAG
+34,High ambient temperature (40°C) caused cooling system to struggle; temperature rose to 7°C.,extreme_weather,compressor_failure,0.7,False,WITHOUT RAG
+35,Driver misread thermostat and adjusted incorrectly; temperature rose to 5.5°C.,driver_error,human_error,0.95,True,WITHOUT RAG
+36,Power cut for 20 minutes; temperature rose from 4°C to 9.5°C.,power_outage,power_outage,0.7,True,WITHOUT RAG
+37,Battery depleted; temperature rose from 4°C to 8.2°C in 16 minutes.,power_outage,unknown,0.7,False,WITHOUT RAG
+38,Operator error: temperature was set to -5°C instead of 4°C.,driver_error,driver_error,0.7,True,WITHOUT RAG
+39,High ambient temperature (40°C) caused cooling system to struggle; temperature rose to 7°C.,extreme_weather,compressor_failure,0.7,False,WITHOUT RAG
+40,GPS signal lost in urban canyon; temperature stable.,gps_blackout,gps_blackout,0.7,True,WITHOUT RAG
+41,External temperature reached 38°C; internal temperature rose from 4°C to 6.5°C.,extreme_weather,unknown,0.7,False,WITHOUT RAG
+42,Driver did not monitor temperature; temperature rose from 4°C to 6.2°C.,driver_error,driver_error,0.7,True,WITHOUT RAG
+43,Extreme cold: external temperature dropped to -15°C; internal temperature fluctuated.,extreme_weather,unknown,0.7,False,WITHOUT RAG
+44,Refrigerant pressure drop; temperature rose from 4°C to 7.8°C in 13 minutes.,compressor_failure,unknown,0.7,False,WITHOUT RAG
+45,Driver set defrost cycle incorrectly; temperature rose to 5.5°C.,driver_error,driver_error,0.7,True,WITHOUT RAG
+46,Gas leak in cooling system; temperature rose from 4°C to 8.5°C in 11 minutes.,compressor_failure,compressor_failure,0.7,True,WITHOUT RAG
+47,Backup generator failed to start; temperature rose from 4°C to 11°C.,power_outage,temperature_control_failure,0.8,False,WITHOUT RAG
+48,"Door left open during unloading, temperature rose from 4°C to 5.5°C in 12 minutes.",door_left_open,door_left_open,0.7,True,WITHOUT RAG
+49,Door seal leaking; temperature rose from 4°C to 6.3°C over 22 minutes.,door_left_open,temperature_anomaly,0.8,False,WITHOUT RAG
+50,Driver set defrost cycle incorrectly; temperature rose to 5.5°C.,driver_error,defrost_cycle_failure,0.8,False,WITHOUT RAG
+51,Driver ignored warning lights; temperature rose from 4°C to 7.0°C.,driver_error,driver_error,0.7,True,WITHOUT RAG
+52,Generator failed; temperature rose from 4°C to 10°C in 18 minutes.,power_outage,unknown,0.7,False,WITHOUT RAG
+53,"The rear door was left open during a routine inspection, causing a slow temperature rise.",door_left_open,door_left_open,0.7,True,WITHOUT RAG
+54,High humidity caused condensation; temperature rose from 4°C to 5.5°C.,extreme_weather,unknown,0.7,False,WITHOUT RAG
+55,External temperature reached 38°C; internal temperature rose from 4°C to 6.5°C.,extreme_weather,unknown,0.7,False,WITHOUT RAG
+56,Heatwave caused internal temperature to rise from 4°C to 7°C in 30 minutes.,extreme_weather,extreme_weather,0.7,True,WITHOUT RAG
+57,Generator failed; temperature rose from 4°C to 10°C in 18 minutes.,power_outage,unknown,0.7,False,WITHOUT RAG
+58,Driver's error caused temperature fluctuation between 2°C and 6°C.,driver_error,driver_error,0.7,True,WITHOUT RAG
+59,Driver set temperature incorrectly to 0°C instead of 4°C; corrected after 30 minutes.,driver_error,driver_error,0.7,True,WITHOUT RAG
+60,Cooling system failure; temperature rose from 4°C to 11°C in 15 minutes.,compressor_failure,compressor_failure,0.7,True,WITHOUT RAG

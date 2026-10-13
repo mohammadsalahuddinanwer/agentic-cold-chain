@@ -1,0 +1,121 @@
+case_id,text,ground_truth,predicted,confidence,correct,mode,answer_source,used_fallback,iterations,seconds
+1,Temperature rose from 4 to 9 degrees in 15 minutes. Compressor making unusual grinding noise. No door sensors triggered. Refrigerant pressure alarm active.,compressor_failure,compressor_failure,0.9,True,WITHOUT RAG,llm,False,2,59.0
+2,Rapid temperature increase from 3 to 8 degrees over 12 minutes. Refrigeration unit stopped suddenly. Internal mechanical fault suspected.,compressor_failure,compressor_failure,0.9,True,WITHOUT RAG,llm,False,2,47.3
+3,Temperature climbed from 4 to 10 degrees in 18 minutes with loud clicking noise from compressor unit. No external factors detected.,compressor_failure,compressor_failure,0.9,True,WITHOUT RAG,llm,False,2,61.8
+4,Cooling capacity reduced by 70 percent. Temperature rose from 4 to 7.5 degrees in 25 minutes. Compressor running but ineffective. Refrigerant leak suspected.,compressor_failure,compressor_failure,0.9,True,WITHOUT RAG,llm,False,3,66.2
+5,Compressor thermal protection triggered. Temperature rose from 4 to 9 degrees in 14 minutes. No power loss. Internal mechanical overheating.,compressor_failure,extreme_weather,0.9,False,WITHOUT RAG,llm,False,3,82.8
+6,Temperature rising at 0.4 degrees per minute. Unusual vibration from refrigeration unit at 120Hz. Compressor bearing fault likely.,compressor_failure,compressor_failure,0.9,True,WITHOUT RAG,llm,False,2,58.8
+7,"Evaporator fan stopped. Temperature stratification detected: 9 degrees at top, 4 degrees at bottom. Compressor running but no airflow.",compressor_failure,compressor_failure,0.9,True,WITHOUT RAG,llm,False,2,62.0
+8,Refrigerant pressure dropped to zero. Temperature rose from 4 to 11 degrees in 16 minutes. Hissing sound from refrigerant pipe.,compressor_failure,compressor_failure,0.9,True,WITHOUT RAG,llm,False,1,57.5
+9,Drive belt snapped on compressor pulley. Sudden temperature rise from 4 to 9 degrees in 10 minutes with loud snap sound.,compressor_failure,compressor_failure,0.9,True,WITHOUT RAG,llm,False,3,63.8
+10,Condenser coil blockage detected. Compressor overloaded and tripped. Temperature rose from 3 to 8 degrees in 18 minutes.,compressor_failure,compressor_failure,0.9,True,WITHOUT RAG,llm,False,1,67.4
+11,"Scroll compressor failure. Abnormal vibration, cooling capacity fell 65 percent. Temperature rose from 4 to 8.5 degrees in 22 minutes.",compressor_failure,compressor_failure,0.9,True,WITHOUT RAG,llm,False,2,61.7
+12,Motor windings burned out. Burning smell detected. Temperature rose from 4 to 9 degrees in 11 minutes. Engine unaffected.,compressor_failure,compressor_failure,0.9,True,WITHOUT RAG,llm,False,2,60.5
+13,Expansion valve stuck closed. Compressor running but no cooling. Temperature climbed from 4 to 8 degrees in 14 minutes.,compressor_failure,compressor_failure,0.9,True,WITHOUT RAG,llm,False,1,52.4
+14,Refrigeration unit cycling on and off every 4 minutes. Temperature oscillating between 4 and 8 degrees. Thermal overload fault.,compressor_failure,compressor_failure,0.9,True,WITHOUT RAG,llm,False,2,78.1
+15,Temperature rose from 4 to 9.5 degrees rapidly. Compressor clutch failed. No door events. No external weather issues.,compressor_failure,compressor_failure,0.9,True,WITHOUT RAG,llm,False,2,92.4
+16,Low refrigerant pressure warning. Temperature slowly rising from 4 to 6.5 degrees over 40 minutes. Gradual compressor efficiency loss.,compressor_failure,compressor_failure,0.9,True,WITHOUT RAG,llm,False,3,72.0
+17,Refrigerant overcharge caused high pressure shutdown. Temperature rose from 4 to 10 degrees in 16 minutes. Mechanical system fault.,compressor_failure,compressor_failure,0.9,True,WITHOUT RAG,llm,False,3,92.3
+18,Temperature rose from 4 to 8 degrees in 20 minutes. Compressor running at 120 percent capacity before thermal trip.,compressor_failure,compressor_failure,0.9,True,WITHOUT RAG,llm,False,3,112.5
+19,Evaporator completely iced over. Airflow blocked. Temperature rose from 4 to 7 degrees in 30 minutes despite compressor running.,compressor_failure,compressor_failure,0.9,True,WITHOUT RAG,llm,False,3,73.1
+20,Compressor motor seized. No cooling output. Temperature rose from 4 to 10 degrees in 13 minutes. Grinding mechanical sound.,compressor_failure,compressor_failure,0.9,True,WITHOUT RAG,llm,False,3,61.1
+21,All vehicle electrical systems failed simultaneously. Temperature rose from 4 to 10 degrees in 22 minutes. Total power loss.,power_outage,power_outage,0.9,True,WITHOUT RAG,llm,False,2,54.9
+22,Engine stopped due to fuel exhaustion. All power including refrigeration lost. Temperature rose from 4 to 9 degrees in 20 minutes.,power_outage,power_outage,0.9,True,WITHOUT RAG,llm,False,2,69.5
+23,Alternator failure caused complete battery drain. Total electrical blackout to all systems. Temperature rising rapidly.,power_outage,power_outage,0.9,True,WITHOUT RAG,llm,False,2,64.8
+24,Lightning strike tripped all circuit breakers. Complete vehicle power loss. Temperature rose from 4 to 8 degrees in 19 minutes.,power_outage,power_outage,0.9,True,WITHOUT RAG,llm,False,2,70.8
+25,Shore power disconnected at depot. Temporary 4-minute gap before engine power. Temperature rose from 4 to 5.2 degrees.,power_outage,power_outage,0.9,True,WITHOUT RAG,llm,False,2,96.7
+26,Main fuse bank failed. All electrical systems including refrigeration lost power. Temperature rising at 0.4 degrees per minute.,power_outage,power_outage,0.9,True,WITHOUT RAG,llm,False,2,66.0
+27,Engine overheated and shutdown. Simultaneous loss of refrigeration and all cabin systems. Temperature rose from 4 to 9.5 degrees.,power_outage,compressor_failure,0.8,False,WITHOUT RAG,llm_truncated,False,3,133.3
+28,Battery terminals corroded causing complete power interruption. All systems offline simultaneously. Temperature rose 5 degrees in 22 minutes.,power_outage,power_outage,0.9,True,WITHOUT RAG,llm,False,3,137.1
+29,Power Management Unit fault caused total electrical shutdown. Temperature rose from 4 to 8.5 degrees in 18 minutes.,power_outage,power_outage,0.9,True,WITHOUT RAG,llm,False,1,43.1
+30,Auxiliary Power Unit battery depleted overnight. Refrigeration lost all power at 2am. Temperature rose to 9 degrees by morning.,power_outage,compressor_failure,0.9,False,WITHOUT RAG,llm,False,4,187.3
+31,Wiring harness short circuit caused total power failure. Cabin and refrigeration systems both lost power simultaneously.,power_outage,power_outage,0.9,True,WITHOUT RAG,llm,False,2,56.4
+32,Generator failed to start during grid power outage. No backup power. Temperature rose from 4 to 8 degrees in 20 minutes.,power_outage,power_outage,0.9,True,WITHOUT RAG,llm,False,2,76.6
+33,Inverter failure cut power to refrigeration controller. All systems defaulted to off. Temperature rose from 4 to 8 degrees.,power_outage,power_outage,0.9,True,WITHOUT RAG,llm,False,2,59.9
+34,Refrigeration fuse bank blown by power surge. Complete electrical loss to cooling unit. Temperature rose from 4 to 9 degrees.,power_outage,power_outage,0.9,True,WITHOUT RAG,llm,False,1,50.9
+35,Total power loss during motorway transit. Vehicle pulled over. All electronics offline. Temperature rising rapidly from 4 degrees.,power_outage,compressor_failure,0.9,False,WITHOUT RAG,llm,False,2,71.9
+36,Scheduled maintenance accidentally cut power 2 hours early. Temperature rose from 4 to 7 degrees before error discovered.,power_outage,power_outage,0.9,True,WITHOUT RAG,llm,False,2,60.0
+37,Electrical control unit failure. Complete shutdown of all vehicle systems. Temperature rose from 4 to 8.5 degrees in 21 minutes.,power_outage,power_outage,0.9,True,WITHOUT RAG,llm,False,2,77.2
+38,APU electrical fault caused cascading shutdown of all systems. Temperature rose from 4 to 9 degrees during overnight delivery.,power_outage,power_outage,0.8,True,WITHOUT RAG,llm,False,2,64.1
+39,Vehicle collision damaged electrical supply. All systems powered down. Refrigeration lost. Temperature rose from 4 to 10 degrees.,power_outage,compressor_failure,0.9,False,WITHOUT RAG,llm,False,2,82.8
+40,Fuel pump failure caused engine stop. All vehicle power lost simultaneously. Temperature rising from 4 degrees at 0.35 per minute.,power_outage,power_outage,0.8,True,WITHOUT RAG,llm,False,2,95.7
+41,Temperature rose gradually from 4 to 6 degrees over 18 minutes. Door sensor shows rear door open. No equipment fault.,door_left_open,door_left_open,0.8,True,WITHOUT RAG,llm,False,2,96.8
+42,Slow temperature rise from 4 to 5.5 degrees over 22 minutes. Door ajar during rest stop. Ambient temperature 26 degrees.,door_left_open,door_left_open,0.8,True,WITHOUT RAG,llm,False,2,57.9
+43,Temperature increasing at 0.1 degrees per minute. Driver forgot to close rear door after delivery. No mechanical fault.,door_left_open,driver_error,0.9,False,WITHOUT RAG,llm,False,1,38.1
+44,Gradual temperature rise from 3.5 to 6.2 degrees. Side door left open during loading. Human oversight confirmed.,door_left_open,door_left_open,0.9,True,WITHOUT RAG,llm,False,1,50.7
+45,Temperature rose from 4 to 5.8 degrees over 20 minutes. Door hinge damaged allowing 3cm gap. Warm ambient air entering.,door_left_open,door_left_open,0.9,True,WITHOUT RAG,llm,False,1,51.5
+46,Slow temperature increase from 4 to 6.5 degrees. Roller door partially raised during transit. Physical door breach.,door_left_open,door_left_open,0.8,True,WITHOUT RAG,llm,False,3,94.2
+47,Temperature rose gradually from 4 to 5.7 degrees. Door seal torn by forklift. Cold air escaping through damaged seal.,door_left_open,door_left_open,0.9,True,WITHOUT RAG,llm,False,2,61.5
+48,Temperature increasing slowly. Double doors misaligned leaving 5cm gap. Warm air ingress confirmed. No compressor fault.,door_left_open,door_left_open,0.9,True,WITHOUT RAG,llm,False,2,57.2
+49,Temperature rose from 4 to 6.8 degrees over 30 minutes. Door left open overnight at depot. Ambient 18 degrees.,door_left_open,door_left_open,0.9,True,WITHOUT RAG,llm,False,2,85.6
+50,Slow rise from 4 to 5.2 degrees. Auxiliary cooling unit door open during pre-cooling. Cargo not yet loaded.,door_left_open,door_left_open,0.9,True,WITHOUT RAG,llm,False,1,64.1
+51,Temperature rising at 0.2 degrees per minute. Door lock mechanism failed during transit. Physical door breach.,door_left_open,door_left_open,0.8,True,WITHOUT RAG,llm,False,2,75.6
+52,Gradual temperature rise during multi-drop delivery. Door sensor triggered multiple times. Cumulative rise from 4 to 7 degrees.,door_left_open,door_left_open,0.8,True,WITHOUT RAG,llm,False,2,83.2
+53,Temperature rose from 4 to 5.9 degrees. Tail-lift door sensor malfunction showing closed when actually open 8cm.,door_left_open,compressor_failure,0.9,False,WITHOUT RAG,llm,False,2,96.5
+54,Slow temperature increase. Rear door open 10 minutes at pharmacy. Ambient 26 degrees. Refrigeration working normally.,door_left_open,door_left_open,0.8,True,WITHOUT RAG,llm,False,1,63.5
+55,Temperature rose from 4 to 6.3 degrees over 25 minutes. Door ajar confirmed by visual inspection. No mechanical fault.,door_left_open,door_left_open,0.9,True,WITHOUT RAG,llm,False,1,33.7
+56,Gradual rise from 4 to 5.4 degrees. Side access door left open after multi-drop delivery. Physical door breach.,door_left_open,door_left_open,0.9,True,WITHOUT RAG,llm,False,2,71.6
+57,Temperature increasing slowly from 4 to 6.1 degrees. Door frame distorted after minor collision. Gap allowing warm air.,door_left_open,door_left_open,0.8,True,WITHOUT RAG,llm,False,2,76.4
+58,Slow temperature rise. Driver propped door open with cargo box during urban delivery. Door open confirmed by sensor.,door_left_open,door_left_open,0.9,True,WITHOUT RAG,llm,False,2,57.7
+59,Temperature rose from 4 to 5.6 degrees. Refrigeration working normally. Door sensor active. Physical breach confirmed.,door_left_open,door_left_open,0.8,True,WITHOUT RAG,llm,False,2,58.9
+60,Gradual temperature increase from 4 to 6.4 degrees over 24 minutes. Hospital delivery door left open. No equipment fault.,door_left_open,door_left_open,0.8,True,WITHOUT RAG,llm,False,2,70.9
+61,Thermostat set to minus 4 degrees instead of 4 degrees. Temperature dropped to minus 1 degree. Freeze risk to vaccines.,driver_error,compressor_failure,0.9,False,WITHOUT RAG,llm,False,3,104.8
+62,Driver switched off refrigeration to save fuel. Temperature rose from 4 to 9 degrees over 35 minutes. Deliberate action.,driver_error,driver_error,0.9,True,WITHOUT RAG,llm,False,2,65.5
+63,Driver parked in direct sunlight for 90 minutes. Temperature rose from 4 to 8 degrees. Human negligent parking decision.,driver_error,driver_error,0.9,True,WITHOUT RAG,llm,False,3,79.0
+64,"Cargo overloaded blocking airflow. Temperature gradient detected. 4 degrees at probe, 8.5 degrees at cargo surface.",driver_error,door_left_open,0.8,False,WITHOUT RAG,llm,False,3,82.3
+65,Driver accepted unauthorised ambient cargo. Warm parcels raised temperature from 4 to 6.5 degrees. Protocol violation.,driver_error,driver_error,0.8,True,WITHOUT RAG,llm,False,2,77.1
+66,Temperature alarm acknowledged without investigation 3 times. Temperature rose from 6 to 10 degrees over 20 minutes.,driver_error,driver_error,0.8,True,WITHOUT RAG,llm,False,3,117.2
+67,Driver departed without pre-cooling. Cargo compartment at 12 degrees at start. Human procedural failure.,driver_error,driver_error,0.9,True,WITHOUT RAG,llm,False,2,92.6
+68,Hot food items loaded alongside cold cargo. Heat transfer raised temperature from 4 to 7 degrees. Loading error.,driver_error,driver_error,0.8,True,WITHOUT RAG,llm,False,3,98.1
+69,Wrong cargo type entered in system. Blood product profile applied instead of vaccine profile. Human data entry error.,driver_error,driver_error,0.9,True,WITHOUT RAG,llm,False,2,75.4
+70,Driver did not report refrigeration warning light for 45 minutes. Temperature rose from 4 to 8.5 degrees. Delayed reporting.,driver_error,driver_error,0.9,True,WITHOUT RAG,llm,False,1,50.8
+71,Driver activated standby mode incorrectly. Temperature rose from 4 to 8 degrees in 30 minutes. Wrong mode selected.,driver_error,driver_error,0.9,True,WITHOUT RAG,llm,False,2,63.5
+72,Unit left in defrost mode from previous journey. Temperature at 12 degrees at departure. Pre-trip check not completed.,driver_error,driver_error,0.8,True,WITHOUT RAG,llm,False,2,64.6
+73,Extended route by 90 minutes without updating cooling settings. Temperature rose to 7.5 degrees. Human route error.,driver_error,driver_error,0.8,True,WITHOUT RAG,llm,False,2,80.6
+74,Driver propped door open with box during multi-drop. Cumulative temperature rise from 4 to 7 degrees over 5 stops.,driver_error,door_left_open,0.9,False,WITHOUT RAG,llm,False,1,47.1
+75,Refrigeration settings incorrectly configured at start of shift. Temperature 6 degrees throughout journey not 4 degrees.,driver_error,driver_error,0.9,True,WITHOUT RAG,llm,False,2,81.8
+76,Driver collected additional cargo from unauthorised location without reporting. Temperature exceeded range during detour.,driver_error,extreme_weather,0.9,False,WITHOUT RAG,llm,False,2,60.6
+77,Manual override of temperature alarm by driver. System continued to alert but driver disabled notifications.,driver_error,driver_error,0.8,True,WITHOUT RAG,llm_truncated,False,2,102.7
+78,Driver did not perform mandatory pre-departure check. Refrigeration fault undetected for 2 hours into journey.,driver_error,compressor_failure,0.9,False,WITHOUT RAG,llm,False,2,76.6
+79,Wrong temperature setpoint entered at start of journey. System cooling to 8 degrees not 4 degrees for 3 hours.,driver_error,driver_error,0.9,True,WITHOUT RAG,llm,False,2,68.9
+80,Driver used personal device to bypass fleet management system. Tracking and temperature alerts suppressed for 45 minutes.,driver_error,driver_error,0.8,True,WITHOUT RAG,llm,False,2,82.0
+81,Ambient temperature 42 degrees. Refrigeration at maximum capacity but temperature rose from 4 to 6.8 degrees over 45 minutes. External heat load.,extreme_weather,extreme_weather,0.8,True,WITHOUT RAG,llm,False,3,121.2
+82,Flash flood. Vehicle drove through 30cm water. Refrigeration intake submerged. Temperature rose from 4 to 7.5 degrees.,extreme_weather,compressor_failure,0.9,False,WITHOUT RAG,llm,False,2,85.7
+83,85 km/h crosswind on bridge reversed refrigeration air intake. Cooling efficiency dropped 40 percent. Temperature rose from 4 to 6.2 degrees.,extreme_weather,extreme_weather,0.8,True,WITHOUT RAG,llm,False,2,74.4
+84,Sandstorm blocked condenser fins. Cooling capacity fell 55 percent. Temperature rose from 4 to 7.8 degrees. External environmental cause.,extreme_weather,extreme_weather,0.9,True,WITHOUT RAG,llm,False,2,49.9
+85,Dense fog with 98 percent humidity caused evaporator icing. Airflow restricted. Temperature rose from 4 to 6.5 degrees.,extreme_weather,extreme_weather,0.9,True,WITHOUT RAG,llm,False,3,77.3
+86,Hailstorm damaged roof insulation. Heat ingress increased. Temperature rose from 4 to 8 degrees in 28 minutes.,extreme_weather,extreme_weather,0.9,True,WITHOUT RAG,llm,False,2,69.2
+87,Wildfire smoke caused safety shutdown of refrigeration air intake. Temperature rose from 4 to 9 degrees in 22 minutes.,extreme_weather,extreme_weather,0.9,True,WITHOUT RAG,llm,False,2,55.6
+88,Warm night 30 degrees ambient at 2am. Refrigeration at maximum capacity. Temperature crept from 4 to 5.8 degrees.,extreme_weather,compressor_failure,0.9,False,WITHOUT RAG,llm,False,2,55.1
+89,Road surface temperature 65 degrees. Radiant heat from tarmac affected floor-level cargo. Temperature rose from 4 to 6.5 degrees.,extreme_weather,extreme_weather,0.9,True,WITHOUT RAG,llm,False,2,83.1
+90,Tropical storm 38 degrees and 95 percent humidity. Refrigeration overwhelmed. Temperature rose from 4 to 7.2 degrees.,extreme_weather,extreme_weather,0.9,True,WITHOUT RAG,llm,False,2,66.6
+91,Desert crossing in summer. Solar radiation 180W/m2. Refrigeration at 98 percent capacity. Temperature crept from 4 to 5.9 degrees.,extreme_weather,compressor_failure,0.9,False,WITHOUT RAG,llm,False,2,137.1
+92,Volcanic ash cloud reduced solar panel efficiency. Battery depleted faster. Temperature rose from 4 to 6.8 degrees.,extreme_weather,extreme_weather,0.9,True,WITHOUT RAG,llm,False,2,63.8
+93,Temperature rose slowly from 4 to 6.1 degrees. Tropical storm with high humidity. Refrigeration working but overwhelmed by external heat.,extreme_weather,extreme_weather,0.9,True,WITHOUT RAG,llm,False,1,61.4
+94,Snow and ice storm reduced vehicle speed to 10 km/h. Prolonged exposure caused temperature to rise from 4 to 6 degrees.,extreme_weather,extreme_weather,0.9,True,WITHOUT RAG,llm,False,2,80.2
+95,Extreme heat event. All nearby vehicles reporting temperature anomalies. External environmental cause confirmed.,extreme_weather,extreme_weather,0.9,True,WITHOUT RAG,llm,False,2,64.7
+96,Temperature rose from 4 to 7 degrees. Strong solar radiation on south-facing roof panel during stationary wait at border crossing.,extreme_weather,extreme_weather,0.9,True,WITHOUT RAG,llm,False,2,52.7
+97,Cold snap caused ice formation on external cooling fins. Heat exchange efficiency reduced. Temperature rose from 4 to 5.8 degrees.,extreme_weather,compressor_failure,0.9,False,WITHOUT RAG,llm,False,1,36.5
+98,Temperature rose from 4 to 6.5 degrees. Recorded hottest day of year. All refrigerated vehicles in fleet reporting higher than normal temperatures.,extreme_weather,extreme_weather,0.8,True,WITHOUT RAG,llm,False,2,88.3
+99,Heavy rain reduced condenser efficiency. Humidity 97 percent. Temperature rose from 4 to 5.9 degrees. External weather event.,extreme_weather,extreme_weather,0.9,True,WITHOUT RAG,llm,False,2,82.0
+100,Temperature rose from 4 to 7.8 degrees during heatwave. Refrigeration working correctly. External heat load exceeded design capacity.,extreme_weather,extreme_weather,0.9,True,WITHOUT RAG,llm,False,2,64.3
+101,GPS signal lost for 8 minutes in tunnel. Temperature completely stable at 4 degrees throughout. Navigation issue only.,gps_blackout,gps_blackout,1.0,True,WITHOUT RAG,llm,False,2,53.4
+102,GPS antenna damaged by debris. Signal lost 35 minutes. Temperature maintained at 4 degrees. Location tracking issue.,gps_blackout,extreme_weather,0.9,False,WITHOUT RAG,llm,False,2,72.4
+103,Solar storm degraded GPS signal for 45 minutes. Position accuracy degraded. Temperature stable. External interference.,gps_blackout,extreme_weather,0.9,False,WITHOUT RAG,llm,False,2,89.7
+104,GPS firmware crash during update. 18-minute blackout while rebooting. Temperature stable at 4 degrees throughout.,gps_blackout,power_outage,0.9,False,WITHOUT RAG,llm,False,2,85.5
+105,Urban canyon multipath errors. GPS position jumping 2km. Unusable for 25 minutes. Temperature completely stable.,gps_blackout,gps_blackout,0.0,True,WITHOUT RAG,llm,False,2,65.9
+106,GPS jammer near military base. All vehicles in 3km radius lost signal 12 minutes. Temperature unaffected at 4 degrees.,gps_blackout,gps_blackout,0.9,True,WITHOUT RAG,llm,False,2,54.2
+107,GPS module water ingress. Permanent failure for remainder of delivery. Temperature normal via cellular IoT.,gps_blackout,power_outage,0.9,False,WITHOUT RAG,llm,False,3,87.5
+108,RF interference from broadcasting tower overwhelmed GPS. 8-minute blackout. Temperature stable via separate cellular sensor.,gps_blackout,gps_blackout,0.9,True,WITHOUT RAG,llm,False,2,65.4
+109,GPS power fuse blown. Tracker offline 55 minutes. Temperature stable at 4 degrees. Driver used phone navigation.,gps_blackout,gps_blackout,0.9,True,WITHOUT RAG,llm,False,2,72.3
+110,Mountain pass terrain blocked GPS signal 32 minutes. Temperature stable at 4 degrees. No thermal anomaly.,gps_blackout,door_left_open,0.8,False,WITHOUT RAG,llm,False,3,99.0
+111,GPS SIM card data exhausted mid-delivery. No position updates 67 minutes. Temperature IoT continued via separate SIM.,gps_blackout,power_outage,0.9,False,WITHOUT RAG,llm,False,2,73.7
+112,GPS spoofing attack near secure facility. False position detected. Temperature unaffected. Security incident reported.,gps_blackout,driver_error,0.0,False,WITHOUT RAG,llm,False,2,94.4
+113,GPS receiver overheated in cab sunlight. Thermal shutdown 25 minutes. Temperature cargo stable at 4 degrees.,gps_blackout,power_outage,0.8,False,WITHOUT RAG,llm,False,3,147.1
+114,Underground hospital car park. GPS lost 18 minutes during delivery. Temperature stable throughout.,gps_blackout,extreme_weather,0.0,False,WITHOUT RAG,llm,False,3,135.2
+115,Incompatible replacement GPS module. No tracking data for full 6-hour shift. Temperature IoT normal via cellular.,gps_blackout,driver_error,0.8,False,WITHOUT RAG,llm,False,3,146.6
+116,GPS signal lost. Location tracking unavailable. Temperature sensor readings normal at 4 degrees. Cargo unaffected.,gps_blackout,compressor_failure,0.0,False,WITHOUT RAG,llm,False,2,88.1
+117,Dense building coverage in city centre. GPS unreliable for 40 minutes. Temperature monitoring continued normally.,gps_blackout,power_outage,0.0,False,WITHOUT RAG,llm,False,1,72.1
+118,Satellite maintenance window reduced European coverage. GPS unavailable 22 minutes. Temperature stable via IoT.,gps_blackout,gps_blackout,0.9,True,WITHOUT RAG,llm,False,2,100.2
+119,GPS connection dropped repeatedly during cross-border transit. Temperature completely unaffected at 4 degrees.,gps_blackout,gps_blackout,0.9,True,WITHOUT RAG,llm,False,2,79.4
+120,GPS blackout confirmed. No position data for 30 minutes. Temperature sensor showing stable 4 degrees throughout.,gps_blackout,extreme_weather,0.9,False,WITHOUT RAG,llm,False,2,71.4

@@ -1,0 +1,10 @@
+run,dynamism,urgency,scale,mean_detection_lead_time,mean_resolution_latency,anomalies_detected
+0,low,low,small,1.0,120.0,10
+1,low,low,small,1.0,120.0,10
+2,low,low,small,1.0,120.0,10
+0,medium,low,small,1.0,120.0,10
+1,medium,low,small,1.0,120.0,10
+2,medium,low,small,1.0,120.0,10
+0,high,low,small,1.0,120.0,10
+1,high,low,small,1.0,120.0,10
+2,high,low,small,1.0,120.0,10

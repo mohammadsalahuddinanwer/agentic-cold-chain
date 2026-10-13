@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+title: >-
+  An Agentic LLM System for Anomaly Detection and Automated
+  Resolution in Cold-Chain Logistics
+message: If you use this software or its results, please cite the paper.
+type: software
+authors:
+  - given-names: Mohammad
+    family-names: Salahuddin
+    email: fttf8892@leeds.ac.uk
+    affiliation: University of Leeds
+    orcid:
+repository-code: "https://github.com/mohammadsalahuddinanwer/agentic-cold-chain"
+abstract: >-
+  An agentic, LLM-powered multi-agent system that detects, diagnoses and
+  resolves cold-chain temperature anomalies. Evaluated with an event-based
+  protocol in which detection lead time is measured rather than assumed,
+  false alarms are costed, and conditions share common random numbers
+  across ten seeds. The measured saving is attributed to automated
+  resolution rather than to proactive detection or LLM reasoning.
+keywords:
+  - agentic AI
+  - large language models
+  - multi-agent systems
+  - cold-chain logistics
+  - anomaly detection
+  - retrieval-augmented generation
+version: "1.0.0"
+date-released: "2026-10-03"

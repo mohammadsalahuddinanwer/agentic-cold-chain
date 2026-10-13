@@ -1,0 +1,985 @@
+[
+  {
+    "text": "Door left open during loading: temperature rose gradually from 4°C to 6.5°C over 15 minutes. Driver reported the rear door was left open while loading cargo. Resolution: notify driver immediately, close the door, verify seal after 5 minutes, monitor temperature recovery.",
+    "metadata": {
+      "type": "door_left_open",
+      "severity": "medium",
+      "resolution": "notify_driver",
+      "typical_duration": "10-20 min",
+      "temperature_rise": "0.5-2°C"
+    }
+  },
+  {
+    "text": "Door left open during inspection: temperature rose from 4°C to 5.8°C in 12 minutes. Driver stopped for routine inspection and left the door open. Resolution: contact driver, close door, check temperature recovery, document incident.",
+    "metadata": {
+      "type": "door_left_open",
+      "severity": "low",
+      "resolution": "notify_driver",
+      "typical_duration": "8-15 min"
+    }
+  },
+  {
+    "text": "Door seal failure: temperature rose gradually from 4°C to 7.2°C over 45 minutes due to degraded door seal allowing warm air entry. Resolution: notify driver, check seal integrity, apply temporary seal, monitor temperature, schedule maintenance.",
+    "metadata": {
+      "type": "door_left_open",
+      "severity": "medium",
+      "resolution": "notify_driver",
+      "typical_duration": "30-60 min"
+    }
+  },
+  {
+    "text": "Door left ajar during temperature check: temperature rose from 4°C to 5.8°C. Resolution: close door, verify seal, monitor temperature.",
+    "metadata": {
+      "type": "door_left_open",
+      "severity": "low",
+      "resolution": "notify_driver",
+      "typical_duration": "5-10 min"
+    }
+  },
+  {
+    "text": "Door not properly sealed after loading: temperature rose from 4°C to 6.0°C. Resolution: reseal door, check temperature recovery, document incident.",
+    "metadata": {
+      "type": "door_left_open",
+      "severity": "low",
+      "resolution": "notify_driver",
+      "typical_duration": "10-20 min"
+    }
+  },
+  {
+    "text": "Driver left door open for 8 minutes: temperature rose from 4°C to 5.2°C. Resolution: contact driver, close door, monitor temperature recovery.",
+    "metadata": {
+      "type": "door_left_open",
+      "severity": "low",
+      "resolution": "notify_driver",
+      "typical_duration": "5-10 min"
+    }
+  },
+  {
+    "text": "Warehouse staff left door open during inventory: temperature increased by 2.3°C. Resolution: close door, check temperature, document incident.",
+    "metadata": {
+      "type": "door_left_open",
+      "severity": "medium",
+      "resolution": "notify_driver",
+      "typical_duration": "15-30 min"
+    }
+  },
+  {
+    "text": "Loading dock delay: vehicle delayed at loading dock for 60 minutes with door open. Temperature rose from 4°C to 6.8°C. Resolution: close door immediately, monitor temperature recovery, adjust cooling if needed, document delay.",
+    "metadata": {
+      "type": "door_left_open",
+      "severity": "medium",
+      "resolution": "notify_driver",
+      "typical_duration": "30-60 min"
+    }
+  },
+  {
+    "text": "Unloading delay: receiver delayed unloading. Door open for 20 minutes. Temperature rose from 4°C to 5.5°C. Resolution: close door, monitor temperature, communicate with receiver about urgency, adjust cooling.",
+    "metadata": {
+      "type": "door_left_open",
+      "severity": "low",
+      "resolution": "notify_driver",
+      "typical_duration": "10-25 min"
+    }
+  },
+  {
+    "text": "Door seal degradation: rubber seal on rear door degraded over time. Warm air entering. Temperature rose gradually from 4°C to 7°C. Resolution: notify driver, check seal, apply temporary seal if possible, monitor temperature, schedule replacement.",
+    "metadata": {
+      "type": "door_left_open",
+      "severity": "medium",
+      "resolution": "notify_driver",
+      "typical_duration": "30-120 min"
+    }
+  },
+  {
+    "text": "Compressor failure: rapid temperature rise from 4°C to 8.5°C in 7 minutes. Refrigeration unit stopped working. Resolution: immediately dispatch backup reefer, reroute to nearest maintenance facility, alert receiver of critical delay.",
+    "metadata": {
+      "type": "compressor_failure",
+      "severity": "high",
+      "resolution": "dispatch_backup",
+      "typical_duration": "5-10 min",
+      "temperature_rise": ">2°C"
+    }
+  },
+  {
+    "text": "Compressor overheating: temperature rose from 4°C to 7.8°C in 9 minutes. Compressor fan failure detected. Resolution: dispatch maintenance crew, check compressor, monitor temperature, prepare backup unit.",
+    "metadata": {
+      "type": "compressor_failure",
+      "severity": "high",
+      "resolution": "dispatch_backup",
+      "typical_duration": "7-12 min"
+    }
+  },
+  {
+    "text": "Refrigerant leak: temperature rose slowly from 4°C to 7.5°C over 60 minutes. Compressor running but cooling efficiency reduced. Resolution: dispatch maintenance, check refrigerant levels, transfer cargo to backup unit if temperature exceeds threshold.",
+    "metadata": {
+      "type": "compressor_failure",
+      "severity": "high",
+      "resolution": "dispatch_backup",
+      "typical_duration": "45-90 min"
+    }
+  },
+  {
+    "text": "Compressor seized: temperature rose from 4°C to 8.7°C in 9 minutes. Resolution: dispatch maintenance, prepare backup reefer, notify receiver.",
+    "metadata": {
+      "type": "compressor_failure",
+      "severity": "high",
+      "resolution": "dispatch_backup",
+      "typical_duration": "5-10 min"
+    }
+  },
+  {
+    "text": "Compressor motor burned out: temperature rose from 4°C to 9.2°C in 10 minutes. Resolution: dispatch backup reefer, reroute to maintenance, notify receiver.",
+    "metadata": {
+      "type": "compressor_failure",
+      "severity": "high",
+      "resolution": "dispatch_backup",
+      "typical_duration": "5-10 min"
+    }
+  },
+  {
+    "text": "Condenser blockage: condenser fins blocked by dust or debris. Cooling efficiency reduced. Temperature rose from 4°C to 6.2°C. Resolution: clean condenser, check airflow, monitor temperature recovery, schedule maintenance.",
+    "metadata": {
+      "type": "compressor_failure",
+      "severity": "medium",
+      "resolution": "repair_on_site",
+      "typical_duration": "30-60 min"
+    }
+  },
+  {
+    "text": "Ice build-up: evaporator coil iced up, reducing cooling capacity. Temperature rose from 4°C to 6.5°C. Resolution: defrost coil, check airflow, adjust defrost cycle settings, monitor temperature.",
+    "metadata": {
+      "type": "compressor_failure",
+      "severity": "medium",
+      "resolution": "repair_on_site",
+      "typical_duration": "30-90 min"
+    }
+  },
+  {
+    "text": "Power outage: refrigeration unit shut down due to electrical failure. Temperature rose from 4°C to 9.5°C in 15 minutes. Resolution: dispatch backup generator, alert maintenance, notify receiver of critical delay, transfer cargo if temperature exceeds 10°C.",
+    "metadata": {
+      "type": "power_outage",
+      "severity": "high",
+      "resolution": "dispatch_backup",
+      "typical_duration": "10-20 min"
+    }
+  },
+  {
+    "text": "Power surge: electrical surge caused refrigeration unit to restart. Temperature rose from 4°C to 6.5°C during restart. Resolution: monitor temperature recovery, check unit operation, notify maintenance, document incident.",
+    "metadata": {
+      "type": "power_outage",
+      "severity": "medium",
+      "resolution": "dispatch_backup",
+      "typical_duration": "5-10 min"
+    }
+  },
+  {
+    "text": "Battery failure: auxiliary battery for IoT sensors depleted. Temperature data intermittent for 2 hours. Resolution: replace battery, check sensor readings, use manual temperature logs, notify maintenance.",
+    "metadata": {
+      "type": "battery_failure",
+      "severity": "low",
+      "resolution": "manual_tracking",
+      "typical_duration": "30-120 min"
+    }
+  },
+  {
+    "text": "Power cut: main power outage for 20 minutes. Temperature rose from 4°C to 9.5°C. Resolution: start backup generator, monitor temperature, notify receiver.",
+    "metadata": {
+      "type": "power_outage",
+      "severity": "high",
+      "resolution": "dispatch_backup",
+      "typical_duration": "10-25 min"
+    }
+  },
+  {
+    "text": "Generator failure: backup generator failed to start during power outage. Temperature rose from 4°C to 11°C. Resolution: dispatch portable generator, transfer cargo, notify receiver.",
+    "metadata": {
+      "type": "power_outage",
+      "severity": "high",
+      "resolution": "dispatch_backup",
+      "typical_duration": "15-30 min"
+    }
+  },
+  {
+    "text": "Power fluctuations: intermittent power caused cooling system to cycle on and off. Temperature fluctuated between 4°C and 7.5°C. Resolution: check electrical supply, stabilise power, monitor temperature.",
+    "metadata": {
+      "type": "power_outage",
+      "severity": "medium",
+      "resolution": "dispatch_backup",
+      "typical_duration": "15-60 min"
+    }
+  },
+  {
+    "text": "Driver error: temperature set incorrectly to 0°C instead of 4°C for vaccines. Corrected after 25 minutes. Temperature recovered within 30 minutes. Resolution: contact driver immediately, correct setting, monitor temperature recovery, document incident.",
+    "metadata": {
+      "type": "driver_error",
+      "severity": "medium",
+      "resolution": "contact_driver",
+      "typical_duration": "15-30 min"
+    }
+  },
+  {
+    "text": "Driver error: door left ajar during routine checks. Temperature rose from 4°C to 6.8°C in 15 minutes. Resolution: contact driver, close door properly, monitor temperature recovery, verify seal.",
+    "metadata": {
+      "type": "driver_error",
+      "severity": "medium",
+      "resolution": "contact_driver",
+      "typical_duration": "10-20 min"
+    }
+  },
+  {
+    "text": "Driver error: ignored temperature alarm. Temperature rose from 4°C to 8.2°C over 45 minutes. Resolution: contact driver immediately, investigate alarm logs, correct issue, monitor recovery, escalate if needed.",
+    "metadata": {
+      "type": "driver_error",
+      "severity": "high",
+      "resolution": "contact_driver",
+      "typical_duration": "30-60 min"
+    }
+  },
+  {
+    "text": "Driver error: turned off cooling unit by mistake. Temperature rose from 4°C to 9°C. Resolution: restart cooling unit, monitor temperature, document incident.",
+    "metadata": {
+      "type": "driver_error",
+      "severity": "high",
+      "resolution": "contact_driver",
+      "typical_duration": "10-20 min"
+    }
+  },
+  {
+    "text": "Driver error: misread thermostat and adjusted incorrectly. Temperature rose to 5.5°C. Resolution: contact driver, correct setting, monitor temperature recovery.",
+    "metadata": {
+      "type": "driver_error",
+      "severity": "low",
+      "resolution": "contact_driver",
+      "typical_duration": "5-15 min"
+    }
+  },
+  {
+    "text": "Driver error: set defrost cycle incorrectly. Temperature rose to 5.5°C. Resolution: contact driver, adjust setting, monitor temperature.",
+    "metadata": {
+      "type": "driver_error",
+      "severity": "low",
+      "resolution": "contact_driver",
+      "typical_duration": "10-20 min"
+    }
+  },
+  {
+    "text": "Driver error: did not monitor temperature. Temperature rose from 4°C to 6.2°C. Resolution: contact driver, investigate cause, monitor recovery.",
+    "metadata": {
+      "type": "driver_error",
+      "severity": "medium",
+      "resolution": "contact_driver",
+      "typical_duration": "15-30 min"
+    }
+  },
+  {
+    "text": "Driver error: ignored warning lights. Temperature rose from 4°C to 7.0°C. Resolution: contact driver, investigate warning, correct issue, monitor recovery.",
+    "metadata": {
+      "type": "driver_error",
+      "severity": "medium",
+      "resolution": "contact_driver",
+      "typical_duration": "15-30 min"
+    }
+  },
+  {
+    "text": "Extreme heatwave: external temperature reached 38°C. Internal temperature rose from 4°C to 6.5°C. Resolution: adjust cooling settings to compensate, monitor every 15 minutes, reroute if possible, notify receiver of potential delay.",
+    "metadata": {
+      "type": "extreme_weather",
+      "severity": "medium",
+      "resolution": "adjust_cooling",
+      "typical_duration": "30-120 min"
+    }
+  },
+  {
+    "text": "Extreme cold: external temperature dropped to -15°C. Internal temperature fluctuated between 2°C and 5°C. Resolution: adjust heating settings, monitor closely, check fuel levels, notify receiver.",
+    "metadata": {
+      "type": "extreme_weather",
+      "severity": "low",
+      "resolution": "adjust_cooling",
+      "typical_duration": "30-90 min"
+    }
+  },
+  {
+    "text": "Heavy rainfall: humidity inside reefer spiked to 95%. Temperature rose from 4°C to 5.5°C. Resolution: check door seals, adjust humidity settings, monitor for condensation, ventilate if necessary.",
+    "metadata": {
+      "type": "extreme_weather",
+      "severity": "low",
+      "resolution": "adjust_humidity",
+      "typical_duration": "30-60 min"
+    }
+  },
+  {
+    "text": "Snowstorm delayed delivery: temperature rose from 4°C to 6.5°C. Resolution: adjust cooling, monitor temperature, notify receiver of delay.",
+    "metadata": {
+      "type": "extreme_weather",
+      "severity": "medium",
+      "resolution": "adjust_cooling",
+      "typical_duration": "30-120 min"
+    }
+  },
+  {
+    "text": "Hurricane warning: temperature rose from 4°C to 6.2°C. Resolution: adjust cooling, monitor closely, reroute if possible.",
+    "metadata": {
+      "type": "extreme_weather",
+      "severity": "medium",
+      "resolution": "adjust_cooling",
+      "typical_duration": "30-120 min"
+    }
+  },
+  {
+    "text": "Storm caused power fluctuations: temperature rose from 4°C to 6°C. Resolution: monitor temperature, adjust cooling, check power supply.",
+    "metadata": {
+      "type": "extreme_weather",
+      "severity": "low",
+      "resolution": "adjust_cooling",
+      "typical_duration": "15-60 min"
+    }
+  },
+  {
+    "text": "GPS blackout: GPS signal lost in rural area. Temperature remained stable at 4°C. Resolution: switch to manual tracking, notify dispatcher with last known location, continue on planned route until signal returns.",
+    "metadata": {
+      "type": "gps_blackout",
+      "severity": "low",
+      "resolution": "manual_tracking",
+      "typical_duration": "15-120 min"
+    }
+  },
+  {
+    "text": "GPS blackout in tunnel: signal lost in underground tunnel. Temperature stable. Resolution: wait for signal to recover, use inertial navigation, notify dispatcher upon exit.",
+    "metadata": {
+      "type": "gps_blackout",
+      "severity": "low",
+      "resolution": "manual_tracking",
+      "typical_duration": "5-30 min"
+    }
+  },
+  {
+    "text": "GPS antenna malfunction: GPS signal intermittent. Temperature stable. Resolution: check antenna connection, switch to backup GPS, notify maintenance, use manual tracking.",
+    "metadata": {
+      "type": "gps_blackout",
+      "severity": "low",
+      "resolution": "manual_tracking",
+      "typical_duration": "15-60 min"
+    }
+  },
+  {
+    "text": "GPS signal lost due to solar flare: temperature stable. Resolution: wait for signal recovery, use manual tracking, notify dispatcher.",
+    "metadata": {
+      "type": "gps_blackout",
+      "severity": "low",
+      "resolution": "manual_tracking",
+      "typical_duration": "15-60 min"
+    }
+  },
+  {
+    "text": "GPS signal lost in urban canyon: temperature stable. Resolution: use manual tracking, notify dispatcher, continue route.",
+    "metadata": {
+      "type": "gps_blackout",
+      "severity": "low",
+      "resolution": "manual_tracking",
+      "typical_duration": "5-30 min"
+    }
+  },
+  {
+    "text": "Sensor malfunction: IoT sensor reading showed erratic temperature fluctuations (±5°C) within seconds. Resolution: cross-check with backup sensor, verify sensor calibration, replace if faulty, use manual temperature logs.",
+    "metadata": {
+      "type": "sensor_malfunction",
+      "severity": "medium",
+      "resolution": "check_sensors",
+      "typical_duration": "15-30 min"
+    }
+  },
+  {
+    "text": "Sensor calibration drift: temperature readings drifting over time. Resolution: recalibrate sensor, cross-check with backup, monitor closely.",
+    "metadata": {
+      "type": "sensor_malfunction",
+      "severity": "low",
+      "resolution": "check_sensors",
+      "typical_duration": "30-60 min"
+    }
+  },
+  {
+    "text": "Sensor battery low: temperature readings intermittent. Resolution: replace battery, check sensor, use manual logs.",
+    "metadata": {
+      "type": "sensor_malfunction",
+      "severity": "low",
+      "resolution": "check_sensors",
+      "typical_duration": "10-30 min"
+    }
+  },
+  {
+    "text": "Vibration anomaly: excessive vibration detected (2.5g) on rough terrain. Resolution: slow down, check cargo stability, monitor for packaging damage, alert receiver of potential damage.",
+    "metadata": {
+      "type": "vibration_anomaly",
+      "severity": "low",
+      "resolution": "slow_down",
+      "typical_duration": "15-60 min"
+    }
+  },
+  {
+    "text": "Route deviation: vehicle deviated from planned route by 50 km. Resolution: verify route change, check for traffic or road closures, update ETA, notify receiver.",
+    "metadata": {
+      "type": "route_deviation",
+      "severity": "medium",
+      "resolution": "verify_route",
+      "typical_duration": "30-120 min"
+    }
+  },
+  {
+    "text": "Fuel leak: fuel consumption rate tripled unexpectedly. Resolution: stop vehicle, check for leaks, call maintenance, arrange replacement vehicle if necessary.",
+    "metadata": {
+      "type": "fuel_leak",
+      "severity": "high",
+      "resolution": "dispatch_backup",
+      "typical_duration": "15-45 min"
+    }
+  },
+  {
+    "text": "Traffic congestion: vehicle stuck in traffic for 45 minutes. Temperature stable. Resolution: monitor fuel levels, update ETA, notify receiver of delay, suggest alternative route.",
+    "metadata": {
+      "type": "traffic_congestion",
+      "severity": "low",
+      "resolution": "reroute_safest",
+      "typical_duration": "30-120 min"
+    }
+  },
+  {
+    "text": "Emergency stop: driver made emergency stop causing cargo shift. Temperature stable. Resolution: check cargo integrity, document incident, notify warehouse of potential packaging damage, inspect on arrival.",
+    "metadata": {
+      "type": "driver_error",
+      "severity": "low",
+      "resolution": "contact_driver",
+      "typical_duration": "5-15 min"
+    }
+  },
+  {
+    "text": "Vaccine shipment: strict 2-8°C range required. Temperature deviation 0.5°C above threshold for 5 minutes. Resolution: immediate driver notification, adjust cooling, check door seal, monitor every 2 minutes until stable.",
+    "metadata": {
+      "type": "door_left_open",
+      "severity": "high",
+      "resolution": "notify_driver",
+      "product_type": "vaccines"
+    }
+  },
+  {
+    "text": "Pharmaceutical shipment: 2-8°C range. Temperature rose to 9°C for 10 minutes due to compressor cycling issue. Resolution: dispatch maintenance, check compressor, monitor temperature recovery, notify receiver.",
+    "metadata": {
+      "type": "compressor_failure",
+      "severity": "high",
+      "resolution": "dispatch_backup",
+      "product_type": "pharmaceuticals"
+    }
+  },
+  {
+    "text": "Fresh produce: 0-4°C range. Temperature rose to 5°C for 20 minutes due to door open. Resolution: notify driver, close door, monitor spoilage risk, check produce quality on arrival.",
+    "metadata": {
+      "type": "door_left_open",
+      "severity": "medium",
+      "resolution": "notify_driver",
+      "product_type": "fresh_produce"
+    }
+  },
+  {
+    "text": "Frozen goods: -18°C required. Temperature rose to -15°C for 30 minutes. Resolution: immediate backup dispatch, check freezer unit, reroute to nearest cold storage if needed, notify receiver.",
+    "metadata": {
+      "type": "compressor_failure",
+      "severity": "high",
+      "resolution": "dispatch_backup",
+      "product_type": "frozen"
+    }
+  },
+  {
+    "text": "Dairy products: 0-4°C range. Temperature rose to 6°C for 15 minutes due to power fluctuation. Resolution: monitor temperature, adjust cooling, notify receiver of potential quality issue, inspect on arrival.",
+    "metadata": {
+      "type": "power_outage",
+      "severity": "medium",
+      "resolution": "dispatch_backup",
+      "product_type": "dairy"
+    }
+  },
+  {
+    "text": "Meat products: -2°C to 2°C range. Temperature rose to 4°C due to door open. Resolution: notify driver, close door, monitor spoilage, inspect on arrival.",
+    "metadata": {
+      "type": "door_left_open",
+      "severity": "medium",
+      "resolution": "notify_driver",
+      "product_type": "meat"
+    }
+  },
+  {
+    "text": "Seafood: -1°C to 0°C range. Temperature rose to 2°C due to power outage. Resolution: dispatch backup, monitor temperature, inspect on arrival.",
+    "metadata": {
+      "type": "power_outage",
+      "severity": "high",
+      "resolution": "dispatch_backup",
+      "product_type": "seafood"
+    }
+  },
+  {
+    "text": "Flowers: 2-8°C range. Temperature rose to 10°C due to extreme weather. Resolution: adjust cooling, monitor, notify receiver.",
+    "metadata": {
+      "type": "extreme_weather",
+      "severity": "medium",
+      "resolution": "adjust_cooling",
+      "product_type": "flowers"
+    }
+  },
+  {
+    "text": "Chemicals: 15-25°C range. Temperature rose to 30°C due to compressor failure. Resolution: dispatch backup, monitor, notify receiver.",
+    "metadata": {
+      "type": "compressor_failure",
+      "severity": "high",
+      "resolution": "dispatch_backup",
+      "product_type": "chemicals"
+    }
+  },
+  {
+    "text": "Biological samples: 2-8°C range. Temperature rose to 10°C due to power outage. Resolution: immediate backup, monitor, notify receiver.",
+    "metadata": {
+      "type": "power_outage",
+      "severity": "high",
+      "resolution": "dispatch_backup",
+      "product_type": "biological"
+    }
+  },
+  {
+    "text": "Blood products: 2-6°C range. Temperature rose to 8°C due to door left open. Resolution: notify driver, close door, monitor, inspect on arrival.",
+    "metadata": {
+      "type": "door_left_open",
+      "severity": "high",
+      "resolution": "notify_driver",
+      "product_type": "blood"
+    }
+  },
+  {
+    "text": "Cold start: refrigeration unit started after long idle. Temperature took 20 minutes to stabilise at 4°C. Resolution: allow stabilisation, monitor closely, pre-cool before loading.",
+    "metadata": {
+      "type": "compressor_failure",
+      "severity": "low",
+      "resolution": "adjust_cooling",
+      "typical_duration": "15-30 min"
+    }
+  },
+  {
+    "text": "Temperature sensor drift: readings slowly increasing over time. Resolution: recalibrate sensor, cross-check with manual measurement, replace if needed.",
+    "metadata": {
+      "type": "sensor_malfunction",
+      "severity": "low",
+      "resolution": "check_sensors",
+      "typical_duration": "30-60 min"
+    }
+  },
+  {
+    "text": "Thermostat malfunction: temperature control inaccurate. Resolution: check thermostat, recalibrate, monitor temperature.",
+    "metadata": {
+      "type": "sensor_malfunction",
+      "severity": "medium",
+      "resolution": "check_sensors",
+      "typical_duration": "15-30 min"
+    }
+  },
+  {
+    "text": "Evaporator fan failure: reduced airflow causing uneven cooling. Resolution: dispatch maintenance, check fan, monitor temperature.",
+    "metadata": {
+      "type": "compressor_failure",
+      "severity": "medium",
+      "resolution": "repair_on_site",
+      "typical_duration": "30-60 min"
+    }
+  },
+  {
+    "text": "Condenser fan failure: reduced heat rejection. Temperature gradually rising. Resolution: dispatch maintenance, check fan, monitor temperature.",
+    "metadata": {
+      "type": "compressor_failure",
+      "severity": "medium",
+      "resolution": "repair_on_site",
+      "typical_duration": "30-60 min"
+    }
+  },
+  {
+    "text": "Defrost cycle failure: ice build-up on evaporator. Temperature rising. Resolution: manual defrost, check defrost timer, monitor temperature.",
+    "metadata": {
+      "type": "compressor_failure",
+      "severity": "medium",
+      "resolution": "repair_on_site",
+      "typical_duration": "30-90 min"
+    }
+  },
+  {
+    "text": "High ambient temperature: external temperature 40°C. Cooling system struggling. Resolution: adjust cooling, monitor closely, reroute if needed.",
+    "metadata": {
+      "type": "extreme_weather",
+      "severity": "medium",
+      "resolution": "adjust_cooling",
+      "typical_duration": "30-120 min"
+    }
+  },
+  {
+    "text": "Low refrigerant pressure: cooling efficiency reduced. Temperature slowly rising. Resolution: dispatch maintenance, check refrigerant levels, monitor.",
+    "metadata": {
+      "type": "compressor_failure",
+      "severity": "medium",
+      "resolution": "repair_on_site",
+      "typical_duration": "30-60 min"
+    }
+  },
+  {
+    "text": "High refrigerant pressure: system overcharged. Temperature fluctuating. Resolution: dispatch maintenance, check pressure, adjust refrigerant.",
+    "metadata": {
+      "type": "compressor_failure",
+      "severity": "medium",
+      "resolution": "repair_on_site",
+      "typical_duration": "30-60 min"
+    }
+  },
+  {
+    "text": "Expansion valve failure: uneven cooling. Temperature fluctuating. Resolution: dispatch maintenance, check valve, monitor temperature.",
+    "metadata": {
+      "type": "compressor_failure",
+      "severity": "medium",
+      "resolution": "repair_on_site",
+      "typical_duration": "30-60 min"
+    }
+  },
+  {
+    "text": "Drier filter blockage: reduced refrigerant flow. Cooling efficiency reduced. Resolution: dispatch maintenance, replace filter, monitor temperature.",
+    "metadata": {
+      "type": "compressor_failure",
+      "severity": "medium",
+      "resolution": "repair_on_site",
+      "typical_duration": "30-60 min"
+    }
+  },
+  {
+    "text": "Air in refrigerant system: cooling efficiency reduced. Resolution: dispatch maintenance, evacuate system, recharge, monitor.",
+    "metadata": {
+      "type": "compressor_failure",
+      "severity": "medium",
+      "resolution": "repair_on_site",
+      "typical_duration": "60-120 min"
+    }
+  },
+  {
+    "text": "Vehicle breakdown: truck broke down. Temperature rising due to no cooling. Resolution: dispatch backup vehicle, transfer cargo, notify receiver.",
+    "metadata": {
+      "type": "compressor_failure",
+      "severity": "high",
+      "resolution": "dispatch_backup",
+      "typical_duration": "30-120 min"
+    }
+  },
+  {
+    "text": "Flat tyre: vehicle stopped on roadside. Temperature monitored. Resolution: change tyre, monitor temperature, update ETA.",
+    "metadata": {
+      "type": "route_deviation",
+      "severity": "low",
+      "resolution": "verify_route",
+      "typical_duration": "15-45 min"
+    }
+  },
+  {
+    "text": "Accident: vehicle involved in minor collision. Cargo checked. Resolution: check cargo integrity, notify receiver, inspect on arrival.",
+    "metadata": {
+      "type": "driver_error",
+      "severity": "medium",
+      "resolution": "contact_driver",
+      "typical_duration": "30-60 min"
+    }
+  },
+  {
+    "text": "Border crossing delay: vehicle held at customs. Temperature monitored. Resolution: monitor temperature, update ETA, notify receiver.",
+    "metadata": {
+      "type": "traffic_congestion",
+      "severity": "low",
+      "resolution": "reroute_safest",
+      "typical_duration": "30-120 min"
+    }
+  },
+  {
+    "text": "Ferry delay: vehicle waiting for ferry. Temperature monitored. Resolution: monitor temperature, update ETA, adjust cooling if needed.",
+    "metadata": {
+      "type": "traffic_congestion",
+      "severity": "low",
+      "resolution": "reroute_safest",
+      "typical_duration": "30-120 min"
+    }
+  },
+  {
+    "text": "Road closure: unexpected road closure. Vehicle rerouted. Resolution: verify reroute, update ETA, monitor temperature, notify receiver.",
+    "metadata": {
+      "type": "route_deviation",
+      "severity": "medium",
+      "resolution": "verify_route",
+      "typical_duration": "30-60 min"
+    }
+  },
+  {
+    "text": "Tunnel closure: vehicle stuck in tunnel. Temperature monitored. Resolution: monitor temperature, update ETA, notify receiver.",
+    "metadata": {
+      "type": "traffic_congestion",
+      "severity": "low",
+      "resolution": "reroute_safest",
+      "typical_duration": "15-60 min"
+    }
+  },
+  {
+    "text": "High wind warning: vehicle slowed due to high winds. Temperature monitored. Resolution: adjust speed, monitor temperature, notify receiver.",
+    "metadata": {
+      "type": "extreme_weather",
+      "severity": "low",
+      "resolution": "adjust_cooling",
+      "typical_duration": "30-60 min"
+    }
+  },
+  {
+    "text": "Fog delay: vehicle delayed due to dense fog. Temperature monitored. Resolution: monitor temperature, update ETA, notify receiver.",
+    "metadata": {
+      "type": "extreme_weather",
+      "severity": "low",
+      "resolution": "adjust_cooling",
+      "typical_duration": "30-120 min"
+    }
+  },
+  {
+    "text": "Landslide: road blocked by landslide. Vehicle rerouted. Resolution: verify reroute, monitor temperature, notify receiver.",
+    "metadata": {
+      "type": "route_deviation",
+      "severity": "medium",
+      "resolution": "verify_route",
+      "typical_duration": "60-180 min"
+    }
+  },
+  {
+    "text": "Flooding: road flooded. Vehicle rerouted. Resolution: verify reroute, monitor temperature, notify receiver.",
+    "metadata": {
+      "type": "route_deviation",
+      "severity": "medium",
+      "resolution": "verify_route",
+      "typical_duration": "60-180 min"
+    }
+  },
+  {
+    "text": "Fuel shortage: vehicle running low on fuel. Resolution: refuel at nearest station, monitor temperature, update ETA.",
+    "metadata": {
+      "type": "fuel_leak",
+      "severity": "medium",
+      "resolution": "dispatch_backup",
+      "typical_duration": "15-45 min"
+    }
+  },
+  {
+    "text": "Engine overheating: vehicle engine temperature high. Resolution: pull over, check engine, monitor cargo temperature.",
+    "metadata": {
+      "type": "fuel_leak",
+      "severity": "medium",
+      "resolution": "dispatch_backup",
+      "typical_duration": "15-45 min"
+    }
+  },
+  {
+    "text": "Tyre pressure warning: low tyre pressure. Resolution: check tyres, adjust pressure, monitor cargo.",
+    "metadata": {
+      "type": "route_deviation",
+      "severity": "low",
+      "resolution": "verify_route",
+      "typical_duration": "10-20 min"
+    }
+  },
+  {
+    "text": "Brake issue: vehicle brake warning. Resolution: pull over, check brakes, monitor cargo temperature.",
+    "metadata": {
+      "type": "route_deviation",
+      "severity": "medium",
+      "resolution": "verify_route",
+      "typical_duration": "15-30 min"
+    }
+  },
+  {
+    "text": "Battery warning: vehicle battery low. Resolution: check battery, monitor cargo temperature, update ETA.",
+    "metadata": {
+      "type": "battery_failure",
+      "severity": "low",
+      "resolution": "manual_tracking",
+      "typical_duration": "10-30 min"
+    }
+  },
+  {
+    "text": "Alternator failure: vehicle electrical system failing. Resolution: pull over, call maintenance, monitor cargo temperature.",
+    "metadata": {
+      "type": "battery_failure",
+      "severity": "medium",
+      "resolution": "dispatch_backup",
+      "typical_duration": "30-60 min"
+    }
+  },
+  {
+    "text": "Coolant leak: vehicle coolant system leaking. Resolution: pull over, check coolant, monitor cargo temperature.",
+    "metadata": {
+      "type": "fuel_leak",
+      "severity": "medium",
+      "resolution": "dispatch_backup",
+      "typical_duration": "15-30 min"
+    }
+  },
+  {
+    "text": "Oil pressure warning: low oil pressure. Resolution: pull over, check oil, monitor cargo temperature.",
+    "metadata": {
+      "type": "fuel_leak",
+      "severity": "medium",
+      "resolution": "dispatch_backup",
+      "typical_duration": "15-30 min"
+    }
+  },
+  {
+    "text": "Check engine light: engine warning light. Resolution: check engine code, monitor cargo temperature, notify receiver.",
+    "metadata": {
+      "type": "compressor_failure",
+      "severity": "medium",
+      "resolution": "repair_on_site",
+      "typical_duration": "30-60 min"
+    }
+  },
+  {
+    "text": "Exhaust temperature high: high exhaust temperature warning. Resolution: pull over, check exhaust, monitor cargo temperature.",
+    "metadata": {
+      "type": "fuel_leak",
+      "severity": "medium",
+      "resolution": "dispatch_backup",
+      "typical_duration": "15-30 min"
+    }
+  },
+  {
+    "text": "Transmission warning: transmission issue. Resolution: pull over, check transmission, monitor cargo temperature.",
+    "metadata": {
+      "type": "route_deviation",
+      "severity": "medium",
+      "resolution": "verify_route",
+      "typical_duration": "30-60 min"
+    }
+  },
+  {
+    "text": "Suspension issue: vehicle suspension problem. Resolution: slow down, check suspension, monitor cargo temperature.",
+    "metadata": {
+      "type": "route_deviation",
+      "severity": "low",
+      "resolution": "verify_route",
+      "typical_duration": "15-30 min"
+    }
+  },
+  {
+    "text": "Steering issue: steering warning. Resolution: pull over, check steering, monitor cargo temperature.",
+    "metadata": {
+      "type": "route_deviation",
+      "severity": "high",
+      "resolution": "dispatch_backup",
+      "typical_duration": "30-60 min"
+    }
+  },
+  {
+    "text": "Door sensor fault: door open warning falsely triggered. Resolution: check sensor, monitor temperature, replace if needed.",
+    "metadata": {
+      "type": "sensor_malfunction",
+      "severity": "low",
+      "resolution": "check_sensors",
+      "typical_duration": "10-20 min"
+    }
+  },
+  {
+    "text": "Humidity sensor fault: humidity reading inaccurate. Resolution: check sensor, recalibrate, monitor temperature.",
+    "metadata": {
+      "type": "sensor_malfunction",
+      "severity": "low",
+      "resolution": "check_sensors",
+      "typical_duration": "10-20 min"
+    }
+  },
+  {
+    "text": "Temperature display fault: display showing incorrect temperature. Resolution: cross-check with manual measurement, replace display.",
+    "metadata": {
+      "type": "sensor_malfunction",
+      "severity": "low",
+      "resolution": "check_sensors",
+      "typical_duration": "10-20 min"
+    }
+  },
+  {
+    "text": "Data transmission failure: IoT data not transmitting. Resolution: check network, use manual logs, notify maintenance.",
+    "metadata": {
+      "type": "sensor_malfunction",
+      "severity": "low",
+      "resolution": "check_sensors",
+      "typical_duration": "15-30 min"
+    }
+  },
+  {
+    "text": "Firmware update required: system update pending. Resolution: schedule update during maintenance, monitor temperature.",
+    "metadata": {
+      "type": "sensor_malfunction",
+      "severity": "low",
+      "resolution": "check_sensors",
+      "typical_duration": "30-60 min"
+    }
+  },
+  {
+    "text": "Battery drain: IoT sensor battery draining fast. Resolution: replace battery, check sensor, monitor temperature.",
+    "metadata": {
+      "type": "battery_failure",
+      "severity": "low",
+      "resolution": "manual_tracking",
+      "typical_duration": "10-30 min"
+    }
+  },
+  {
+    "text": "Memory error: sensor data logging error. Resolution: reset system, check data logs, monitor temperature.",
+    "metadata": {
+      "type": "sensor_malfunction",
+      "severity": "low",
+      "resolution": "check_sensors",
+      "typical_duration": "10-20 min"
+    }
+  },
+  {
+    "text": "Clock synchronization error: timestamp mismatch. Resolution: sync clock, check data logs, monitor temperature.",
+    "metadata": {
+      "type": "sensor_malfunction",
+      "severity": "low",
+      "resolution": "check_sensors",
+      "typical_duration": "10-20 min"
+    }
+  },
+  {
+    "text": "Calibration overdue: sensor calibration required. Resolution: schedule calibration, check readings, monitor temperature.",
+    "metadata": {
+      "type": "sensor_malfunction",
+      "severity": "low",
+      "resolution": "check_sensors",
+      "typical_duration": "30-60 min"
+    }
+  },
+  {
+    "text": "Temperature logging gap: missing temperature data. Resolution: check logger, use manual logs, monitor temperature.",
+    "metadata": {
+      "type": "sensor_malfunction",
+      "severity": "low",
+      "resolution": "check_sensors",
+      "typical_duration": "15-30 min"
+    }
+  },
+  {
+    "text": "Alarm system failure: temperature alarm not triggering. Resolution: check alarm system, test alarm, monitor temperature.",
+    "metadata": {
+      "type": "sensor_malfunction",
+      "severity": "medium",
+      "resolution": "check_sensors",
+      "typical_duration": "15-30 min"
+    }
+  },
+  {
+    "text": "Remote monitoring failure: remote access not available. Resolution: check connection, use local monitoring, notify maintenance.",
+    "metadata": {
+      "type": "sensor_malfunction",
+      "severity": "low",
+      "resolution": "check_sensors",
+      "typical_duration": "15-30 min"
+    }
+  }
+]

@@ -1,0 +1,81 @@
+[
+  {
+    "text": "Driver reported: 'I stopped for a routine inspection near the depot. The rear door was open for about 10 minutes while I was checking the cargo. Temperature rose from 4°C to 5.5°C. I closed the door and the temperature is now recovering.'",
+    "metadata": {
+      "type": "door_left_open",
+      "driver_id": "D123",
+      "location": "Depot_Berlin",
+      "timestamp": "2024-06-15T14:20:00"
+    }
+  },
+  {
+    "text": "Driver reported: 'Compressor started making unusual noise near Frankfurt. Temperature increased from 3°C to 8°C in 12 minutes. I stopped and called maintenance. Backup reefer has been dispatched.'",
+    "metadata": {
+      "type": "compressor_failure",
+      "driver_id": "D456",
+      "location": "Frankfurt",
+      "timestamp": "2024-06-16T09:45:00"
+    }
+  },
+  {
+    "text": "Driver reported: 'GPS signal lost in rural area near Lyons. Last known position: 45.76N, 4.83E. Temperature is stable at 4°C. Manual tracking initiated. Continuing on planned route.'",
+    "metadata": {
+      "type": "gps_blackout",
+      "driver_id": "D789",
+      "location": "Lyons",
+      "timestamp": "2024-06-17T13:10:00"
+    }
+  },
+  {
+    "text": "Driver reported: 'Severe thunderstorm near Brussels. External temperature dropped from 22°C to 10°C. Internal temperature fluctuated between 3°C and 6°C. I adjusted cooling settings. Monitoring closely.'",
+    "metadata": {
+      "type": "extreme_weather",
+      "driver_id": "D101",
+      "location": "Brussels",
+      "timestamp": "2024-06-18T16:30:00"
+    }
+  },
+  {
+    "text": "Driver reported: 'I set the temperature incorrectly to 0°C instead of 4°C. Corrected after 20 minutes. Temperature is now recovering to 4°C. Sorry for the error.'",
+    "metadata": {
+      "type": "driver_error",
+      "driver_id": "D202",
+      "location": "En route",
+      "timestamp": "2024-06-19T08:05:00"
+    }
+  },
+  {
+    "text": "Driver reported: 'Power outage at depot for 15 minutes during loading. Backup generator failed. Reefer unit restarted at 11:45. Temperature spiked to 9°C. I have requested immediate backup dispatch.'",
+    "metadata": {
+      "type": "power_outage",
+      "driver_id": "D303",
+      "location": "Depot_Berlin",
+      "timestamp": "2024-06-20T11:30:00"
+    }
+  },
+  {
+    "text": "Customer message: 'Please check the temperature on shipment #VAC-2042. The dashboard shows a minor deviation. Can you confirm the cargo is safe?'",
+    "metadata": {
+      "type": "customer_inquiry",
+      "shipment_id": "VAC-2042",
+      "timestamp": "2024-06-21T10:15:00"
+    }
+  },
+  {
+    "text": "Dispatcher note: 'Shipment #PHARMA-309 is running 2 hours late due to traffic congestion near Munich. Temperature is stable. Receiver has been notified.'",
+    "metadata": {
+      "type": "traffic_congestion",
+      "shipment_id": "PHARMA-309",
+      "location": "Munich",
+      "timestamp": "2024-06-22T14:00:00"
+    }
+  },
+  {
+    "text": "Maintenance report: 'Door seal on reefer unit #R-1022 has been replaced. The old seal was degraded and allowed warm air entry. Unit is now operating normally.'",
+    "metadata": {
+      "type": "maintenance",
+      "equipment_id": "R-1022",
+      "timestamp": "2024-06-23T09:00:00"
+    }
+  }
+]

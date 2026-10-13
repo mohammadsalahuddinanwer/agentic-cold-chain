@@ -1,0 +1,6 @@
+ablation,mean_cost,std_cost,n,delta_vs_A0,pct_increase
+A0_Full_System,39.54,9.79,100,0.0,0.0
+A1_Remove_RAG,43.91,11.91,100,4.37,11.1
+A2_Remove_EvoOpt,44.42,10.37,100,4.88,12.3
+A3_Remove_Monitor,64.83,10.85,100,25.29,64.0
+A4_Replace_LLM_RuleBased,43.83,12.75,100,4.29,10.8

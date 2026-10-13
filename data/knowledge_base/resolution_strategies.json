@@ -1,0 +1,114 @@
+[
+  {
+    "text": "If anomaly type is 'door_left_open' and severity is low (<0.5): notify driver immediately, verify door is closed after 5 minutes, monitor temperature for 10 minutes. If temperature stabilises, continue. If not, escalate to medium severity.",
+    "metadata": {
+      "anomaly_type": "door_left_open",
+      "severity_range": "low",
+      "strategy": "notify_and_monitor"
+    }
+  },
+  {
+    "text": "If anomaly type is 'door_left_open' and severity is medium or high: notify driver immediately, dispatch maintenance crew to verify door seal, prepare backup reefer, check cargo integrity, monitor temperature every 5 minutes.",
+    "metadata": {
+      "anomaly_type": "door_left_open",
+      "severity_range": "medium_high",
+      "strategy": "dispatch_crew"
+    }
+  },
+  {
+    "text": "If anomaly type is 'compressor_failure' and severity > 0.5: immediately dispatch backup reefer, reroute to nearest maintenance facility, notify receiver of critical delay, alert warehouse of potential spoilage, activate emergency protocol.",
+    "metadata": {
+      "anomaly_type": "compressor_failure",
+      "severity_range": "any",
+      "strategy": "immediate_backup"
+    }
+  },
+  {
+    "text": "If anomaly type is 'compressor_failure' and severity < 0.5: dispatch maintenance on-site, monitor temperature, prepare backup reefer, continue monitoring, notify receiver of potential delay.",
+    "metadata": {
+      "anomaly_type": "compressor_failure",
+      "severity_range": "low",
+      "strategy": "repair_on_site"
+    }
+  },
+  {
+    "text": "If anomaly type is 'extreme_weather': adjust cooling settings to compensate, monitor every 15 minutes, reroute if weather worsens, notify receiver of potential delay, check fuel levels.",
+    "metadata": {
+      "anomaly_type": "extreme_weather",
+      "severity_range": "any",
+      "strategy": "adjust_and_monitor"
+    }
+  },
+  {
+    "text": "If anomaly type is 'power_outage': immediately dispatch backup generator, alert maintenance, notify receiver of critical delay, transfer cargo if temperature exceeds threshold, document incident.",
+    "metadata": {
+      "anomaly_type": "power_outage",
+      "severity_range": "any",
+      "strategy": "immediate_backup"
+    }
+  },
+  {
+    "text": "If anomaly type is 'gps_blackout' and severity is low: continue on planned route, notify dispatcher, monitor temperature, if GPS loss persists for >30 min, escalate to human operator for manual tracking.",
+    "metadata": {
+      "anomaly_type": "gps_blackout",
+      "severity_range": "low",
+      "strategy": "monitor_and_escalate"
+    }
+  },
+  {
+    "text": "If anomaly type is 'gps_blackout' and severity is medium: notify dispatcher immediately, use backup GPS, switch to manual tracking, continue route, update ETA manually.",
+    "metadata": {
+      "anomaly_type": "gps_blackout",
+      "severity_range": "medium",
+      "strategy": "manual_tracking"
+    }
+  },
+  {
+    "text": "If anomaly type is 'driver_error' and severity is low: contact driver immediately, correct setting or action, verify door closed, monitor temperature recovery, document incident.",
+    "metadata": {
+      "anomaly_type": "driver_error",
+      "severity_range": "low",
+      "strategy": "contact_driver"
+    }
+  },
+  {
+    "text": "If anomaly type is 'driver_error' and severity is medium or high: contact driver immediately, dispatch supervisor to location, correct issue, monitor temperature, escalate to backup dispatch if recovery fails.",
+    "metadata": {
+      "anomaly_type": "driver_error",
+      "severity_range": "medium_high",
+      "strategy": "contact_driver_escalate"
+    }
+  },
+  {
+    "text": "If anomaly type is 'sensor_malfunction': cross-check with backup sensors, verify sensor calibration, replace if faulty, use manual temperature logs, monitor closely, notify maintenance.",
+    "metadata": {
+      "anomaly_type": "sensor_malfunction",
+      "severity_range": "any",
+      "strategy": "check_sensors"
+    }
+  },
+  {
+    "text": "If anomaly type is 'vibration_anomaly': slow down vehicle, check cargo stability, monitor for packaging damage, alert receiver of potential damage, inspect on arrival.",
+    "metadata": {
+      "anomaly_type": "vibration_anomaly",
+      "severity_range": "any",
+      "strategy": "slow_down"
+    }
+  },
+  {
+    "text": "If anomaly type is 'route_deviation': verify route change with dispatcher, check for traffic or road closures, update ETA, notify receiver, document deviation reason.",
+    "metadata": {
+      "anomaly_type": "route_deviation",
+      "severity_range": "any",
+      "strategy": "verify_route"
+    }
+  },
+  {
+    "text": "If anomaly type is 'fuel_leak': stop vehicle immediately, check for leaks, call maintenance, arrange replacement vehicle if necessary, notify receiver of critical delay.",
+    "metadata": {
+      "anomaly_type": "fuel_leak",
+      "severity_range": "any",
+      "strategy": "dispatch_backup"
+    }
+  }
+]

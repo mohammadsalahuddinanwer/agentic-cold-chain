@@ -1,0 +1,6 @@
+dynamism,run,mean_detection_lead_time,mean_resolution_latency,anomalies_detected
+high,0,1.0,120.0,10
+high,1,1.0,120.0,10
+high,2,1.0,120.0,10
+high,3,1.0,120.0,10
+high,4,1.0,120.0,10

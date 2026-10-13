@@ -1,0 +1,11 @@
+case_id,text,ground_truth,predicted,confidence,correct,mode
+1,Snowstorm delayed delivery; temperature rose from 4°C to 6.5°C.,extreme_weather,temperature_anomaly,0.6,False,WITH RAG
+2,GPS lost due to solar flare; temperature stable.,gps_blackout,gps_blackout,0.7,True,WITH RAG
+3,Driver ignored temperature alarm; temperature rose from 4°C to 8°C.,driver_error,driver_error,0.7,True,WITH RAG
+4,Driver turned off cooling unit by mistake; temperature rose from 4°C to 9°C.,driver_error,compressor_failure,0.7,False,WITH RAG
+5,Cooling unit malfunction: temperature rose from 4°C to 9°C in 5 minutes.,compressor_failure,compressor_failure,0.7,True,WITH RAG
+1,Snowstorm delayed delivery; temperature rose from 4°C to 6.5°C.,extreme_weather,extreme_weather,0.7,True,WITHOUT RAG
+2,GPS lost due to solar flare; temperature stable.,gps_blackout,gps_blackout,0.7,True,WITHOUT RAG
+3,Driver ignored temperature alarm; temperature rose from 4°C to 8°C.,driver_error,driver_error,0.7,True,WITHOUT RAG
+4,Driver turned off cooling unit by mistake; temperature rose from 4°C to 9°C.,driver_error,compressor_failure,0.7,False,WITHOUT RAG
+5,Cooling unit malfunction: temperature rose from 4°C to 9°C in 5 minutes.,compressor_failure,compressor_failure,0.7,True,WITHOUT RAG

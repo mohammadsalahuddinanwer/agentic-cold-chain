@@ -1,0 +1,482 @@
+[
+  {
+    "text": "Snowstorm delayed delivery; temperature rose from 4\u00b0C to 6.5\u00b0C.",
+    "ground_truth": "extreme_weather",
+    "metadata": {
+      "type": "extreme_weather",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "GPS lost due to solar flare; temperature stable.",
+    "ground_truth": "gps_blackout",
+    "metadata": {
+      "type": "gps_blackout",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Driver ignored temperature alarm; temperature rose from 4\u00b0C to 8\u00b0C.",
+    "ground_truth": "driver_error",
+    "metadata": {
+      "type": "driver_error",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Driver turned off cooling unit by mistake; temperature rose from 4\u00b0C to 9\u00b0C.",
+    "ground_truth": "driver_error",
+    "metadata": {
+      "type": "driver_error",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Cooling unit malfunction: temperature rose from 4\u00b0C to 9\u00b0C in 5 minutes.",
+    "ground_truth": "compressor_failure",
+    "metadata": {
+      "type": "compressor_failure",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Driver forgot to close door after checking load; temperature rose to 6.2\u00b0C.",
+    "ground_truth": "door_left_open",
+    "metadata": {
+      "type": "door_left_open",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Door left ajar during temperature check; temperature rose from 4\u00b0C to 5.8\u00b0C.",
+    "ground_truth": "door_left_open",
+    "metadata": {
+      "type": "door_left_open",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Door seal degraded, causing gradual temperature rise of 0.5\u00b0C per minute.",
+    "ground_truth": "door_left_open",
+    "metadata": {
+      "type": "door_left_open",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Compressor belt snapped; temperature rose from 4\u00b0C to 9.5\u00b0C in 8 minutes.",
+    "ground_truth": "compressor_failure",
+    "metadata": {
+      "type": "compressor_failure",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Main power outage; temperature rose from 4\u00b0C to 10.5\u00b0C in 22 minutes.",
+    "ground_truth": "power_outage",
+    "metadata": {
+      "type": "power_outage",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "GPS signal lost for 45 minutes; temperature stable at 4\u00b0C.",
+    "ground_truth": "gps_blackout",
+    "metadata": {
+      "type": "gps_blackout",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "GPS signal lost in underground parking; temperature stable.",
+    "ground_truth": "gps_blackout",
+    "metadata": {
+      "type": "gps_blackout",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Compressor seized; temperature rose from 4\u00b0C to 8.7\u00b0C in 9 minutes.",
+    "ground_truth": "compressor_failure",
+    "metadata": {
+      "type": "compressor_failure",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Driver failed to report temperature issue; temperature rose to 6.8\u00b0C.",
+    "ground_truth": "driver_error",
+    "metadata": {
+      "type": "driver_error",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Satellite signal lost; temperature remained stable.",
+    "ground_truth": "gps_blackout",
+    "metadata": {
+      "type": "gps_blackout",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Driver left door ajar; temperature rose from 4\u00b0C to 7\u00b0C in 15 minutes.",
+    "ground_truth": "driver_error",
+    "metadata": {
+      "type": "driver_error",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "GPS blackout in remote area; temperature stable.",
+    "ground_truth": "gps_blackout",
+    "metadata": {
+      "type": "gps_blackout",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "GPS lost due to solar flare; temperature stable.",
+    "ground_truth": "gps_blackout",
+    "metadata": {
+      "type": "gps_blackout",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "GPS antenna malfunction; temperature stable.",
+    "ground_truth": "gps_blackout",
+    "metadata": {
+      "type": "gps_blackout",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Door seal leaking; temperature rose from 4\u00b0C to 6.3\u00b0C over 22 minutes.",
+    "ground_truth": "door_left_open",
+    "metadata": {
+      "type": "door_left_open",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Cooling system failure; temperature rose from 4\u00b0C to 11\u00b0C in 15 minutes.",
+    "ground_truth": "compressor_failure",
+    "metadata": {
+      "type": "compressor_failure",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Driver set temperature incorrectly to 0\u00b0C instead of 4\u00b0C; corrected after 30 minutes.",
+    "ground_truth": "driver_error",
+    "metadata": {
+      "type": "driver_error",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "GPS blackout due to tunnel; temperature remained stable.",
+    "ground_truth": "gps_blackout",
+    "metadata": {
+      "type": "gps_blackout",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Compressor fan failure; temperature rose from 4\u00b0C to 7\u00b0C in 9 minutes.",
+    "ground_truth": "compressor_failure",
+    "metadata": {
+      "type": "compressor_failure",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Power surge caused refrigeration unit to restart; temperature rose from 4\u00b0C to 7\u00b0C.",
+    "ground_truth": "power_outage",
+    "metadata": {
+      "type": "power_outage",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Compressor belt snapped; temperature rose from 4\u00b0C to 9.5\u00b0C in 8 minutes.",
+    "ground_truth": "compressor_failure",
+    "metadata": {
+      "type": "compressor_failure",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Driver reported door ajar; temperature increased from 4\u00b0C to 6\u00b0C in 10 minutes.",
+    "ground_truth": "door_left_open",
+    "metadata": {
+      "type": "door_left_open",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "GPS signal lost in rural area; temperature remained stable at 4\u00b0C.",
+    "ground_truth": "gps_blackout",
+    "metadata": {
+      "type": "gps_blackout",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Heatwave caused internal temperature to rise from 4\u00b0C to 7\u00b0C in 30 minutes.",
+    "ground_truth": "extreme_weather",
+    "metadata": {
+      "type": "extreme_weather",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "GPS signal lost for 45 minutes; temperature stable at 4\u00b0C.",
+    "ground_truth": "gps_blackout",
+    "metadata": {
+      "type": "gps_blackout",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Electrical fault caused cooling system shutdown; temperature rose to 8.5\u00b0C.",
+    "ground_truth": "power_outage",
+    "metadata": {
+      "type": "power_outage",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "GPS lost due to solar flare; temperature stable.",
+    "ground_truth": "gps_blackout",
+    "metadata": {
+      "type": "gps_blackout",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Door seal degraded, causing gradual temperature rise of 0.5\u00b0C per minute.",
+    "ground_truth": "door_left_open",
+    "metadata": {
+      "type": "door_left_open",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "High ambient temperature (40\u00b0C) caused cooling system to struggle; temperature rose to 7\u00b0C.",
+    "ground_truth": "extreme_weather",
+    "metadata": {
+      "type": "extreme_weather",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Driver misread thermostat and adjusted incorrectly; temperature rose to 5.5\u00b0C.",
+    "ground_truth": "driver_error",
+    "metadata": {
+      "type": "driver_error",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Power cut for 20 minutes; temperature rose from 4\u00b0C to 9.5\u00b0C.",
+    "ground_truth": "power_outage",
+    "metadata": {
+      "type": "power_outage",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Battery depleted; temperature rose from 4\u00b0C to 8.2\u00b0C in 16 minutes.",
+    "ground_truth": "power_outage",
+    "metadata": {
+      "type": "power_outage",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Operator error: temperature was set to -5\u00b0C instead of 4\u00b0C.",
+    "ground_truth": "driver_error",
+    "metadata": {
+      "type": "driver_error",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "High ambient temperature (40\u00b0C) caused cooling system to struggle; temperature rose to 7\u00b0C.",
+    "ground_truth": "extreme_weather",
+    "metadata": {
+      "type": "extreme_weather",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "GPS signal lost in urban canyon; temperature stable.",
+    "ground_truth": "gps_blackout",
+    "metadata": {
+      "type": "gps_blackout",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "External temperature reached 38\u00b0C; internal temperature rose from 4\u00b0C to 6.5\u00b0C.",
+    "ground_truth": "extreme_weather",
+    "metadata": {
+      "type": "extreme_weather",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Driver did not monitor temperature; temperature rose from 4\u00b0C to 6.2\u00b0C.",
+    "ground_truth": "driver_error",
+    "metadata": {
+      "type": "driver_error",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Extreme cold: external temperature dropped to -15\u00b0C; internal temperature fluctuated.",
+    "ground_truth": "extreme_weather",
+    "metadata": {
+      "type": "extreme_weather",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Refrigerant pressure drop; temperature rose from 4\u00b0C to 7.8\u00b0C in 13 minutes.",
+    "ground_truth": "compressor_failure",
+    "metadata": {
+      "type": "compressor_failure",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Driver set defrost cycle incorrectly; temperature rose to 5.5\u00b0C.",
+    "ground_truth": "driver_error",
+    "metadata": {
+      "type": "driver_error",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Gas leak in cooling system; temperature rose from 4\u00b0C to 8.5\u00b0C in 11 minutes.",
+    "ground_truth": "compressor_failure",
+    "metadata": {
+      "type": "compressor_failure",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Backup generator failed to start; temperature rose from 4\u00b0C to 11\u00b0C.",
+    "ground_truth": "power_outage",
+    "metadata": {
+      "type": "power_outage",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Door left open during unloading, temperature rose from 4\u00b0C to 5.5\u00b0C in 12 minutes.",
+    "ground_truth": "door_left_open",
+    "metadata": {
+      "type": "door_left_open",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Door seal leaking; temperature rose from 4\u00b0C to 6.3\u00b0C over 22 minutes.",
+    "ground_truth": "door_left_open",
+    "metadata": {
+      "type": "door_left_open",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Driver set defrost cycle incorrectly; temperature rose to 5.5\u00b0C.",
+    "ground_truth": "driver_error",
+    "metadata": {
+      "type": "driver_error",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Driver ignored warning lights; temperature rose from 4\u00b0C to 7.0\u00b0C.",
+    "ground_truth": "driver_error",
+    "metadata": {
+      "type": "driver_error",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Generator failed; temperature rose from 4\u00b0C to 10\u00b0C in 18 minutes.",
+    "ground_truth": "power_outage",
+    "metadata": {
+      "type": "power_outage",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "The rear door was left open during a routine inspection, causing a slow temperature rise.",
+    "ground_truth": "door_left_open",
+    "metadata": {
+      "type": "door_left_open",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "High humidity caused condensation; temperature rose from 4\u00b0C to 5.5\u00b0C.",
+    "ground_truth": "extreme_weather",
+    "metadata": {
+      "type": "extreme_weather",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "External temperature reached 38\u00b0C; internal temperature rose from 4\u00b0C to 6.5\u00b0C.",
+    "ground_truth": "extreme_weather",
+    "metadata": {
+      "type": "extreme_weather",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Heatwave caused internal temperature to rise from 4\u00b0C to 7\u00b0C in 30 minutes.",
+    "ground_truth": "extreme_weather",
+    "metadata": {
+      "type": "extreme_weather",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Generator failed; temperature rose from 4\u00b0C to 10\u00b0C in 18 minutes.",
+    "ground_truth": "power_outage",
+    "metadata": {
+      "type": "power_outage",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Driver's error caused temperature fluctuation between 2\u00b0C and 6\u00b0C.",
+    "ground_truth": "driver_error",
+    "metadata": {
+      "type": "driver_error",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Driver set temperature incorrectly to 0\u00b0C instead of 4\u00b0C; corrected after 30 minutes.",
+    "ground_truth": "driver_error",
+    "metadata": {
+      "type": "driver_error",
+      "source": "synthetic"
+    }
+  },
+  {
+    "text": "Cooling system failure; temperature rose from 4\u00b0C to 11\u00b0C in 15 minutes.",
+    "ground_truth": "compressor_failure",
+    "metadata": {
+      "type": "compressor_failure",
+      "source": "synthetic"
+    }
+	 }
+]

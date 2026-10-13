@@ -1,0 +1,5 @@
+{
+  "trigger": "classifier",
+  "threshold": 0.86,
+  "persist": 1
+}

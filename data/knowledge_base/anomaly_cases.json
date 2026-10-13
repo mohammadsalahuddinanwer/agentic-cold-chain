@@ -1,0 +1,242 @@
+[
+  {
+    "text": "Compressor seized suddenly; temperature spiked 3.5 degrees in 6 minutes. Refrigeration unit making grinding noise. Internal mechanical fault. This is a compressor_failure anomaly.",
+    "metadata": {"type": "compressor_failure", "severity": "high", "resolution": "dispatch_backup", "key_signal": "rapid rise internal mechanical fault grinding noise", "not_confused_with": "power_outage which has total electrical loss"}
+  },
+  {
+    "text": "Rapid temperature rise from 4 to 8 degrees in under 8 minutes. Refrigeration unit stopped completely. No power loss. Compressor failed mechanically. This is a compressor_failure anomaly.",
+    "metadata": {"type": "compressor_failure", "severity": "high", "resolution": "dispatch_backup", "key_signal": "rapid rise refrigeration stopped no power loss", "not_confused_with": "power_outage"}
+  },
+  {
+    "text": "Cooling unit malfunction detected. Temperature rose from 4 to 9 degrees in 5 minutes. Compressor running but not cooling. Internal mechanical failure. This is a compressor_failure anomaly.",
+    "metadata": {"type": "compressor_failure", "severity": "high", "resolution": "dispatch_backup", "key_signal": "compressor running but not cooling internal fault"}
+  },
+  {
+    "text": "Refrigerant leak detected by sensor. Temperature climbed from 4 to 7.5 degrees in 10 minutes. Hissing sound from refrigeration unit. This is a compressor_failure anomaly.",
+    "metadata": {"type": "compressor_failure", "severity": "high", "resolution": "dispatch_backup", "key_signal": "refrigerant leak hissing mechanical internal fault"}
+  },
+  {
+    "text": "Compressor overheating triggered thermal cutout. Temperature rose from 4 to 8.2 degrees in 7 minutes. Unit restarted but failed again. Internal compressor fault. This is a compressor_failure anomaly.",
+    "metadata": {"type": "compressor_failure", "severity": "high", "resolution": "dispatch_backup", "key_signal": "compressor overheating thermal cutout internal fault"}
+  },
+  {
+    "text": "Evaporator fan failed inside refrigeration unit. Reduced airflow causing uneven cooling. Temperature gradually rising 0.3 degrees per minute. Internal fan mechanical failure. This is a compressor_failure anomaly.",
+    "metadata": {"type": "compressor_failure", "severity": "medium", "resolution": "repair_on_site", "key_signal": "evaporator fan failure internal airflow mechanical"}
+  },
+  {
+    "text": "Defrost cycle stuck causing ice build-up on evaporator. Airflow blocked despite compressor running. Temperature rising slowly. Internal refrigeration fault. This is a compressor_failure anomaly.",
+    "metadata": {"type": "compressor_failure", "severity": "medium", "resolution": "repair_on_site", "key_signal": "defrost cycle failure ice build-up internal fault"}
+  },
+  {
+    "text": "Compressor belt snapped; temperature rose from 4 to 9.5 degrees in 8 minutes. Mechanical component failure inside refrigeration unit. This is a compressor_failure anomaly.",
+    "metadata": {"type": "compressor_failure", "severity": "high", "resolution": "dispatch_backup", "key_signal": "belt snapped mechanical internal rapid temperature rise"}
+  },
+  {
+    "text": "Compressor seized; temperature rose from 4 to 8.7 degrees in 9 minutes. Internal hardware fault confirmed by maintenance team. This is a compressor_failure anomaly.",
+    "metadata": {"type": "compressor_failure", "severity": "high", "resolution": "dispatch_backup", "key_signal": "compressor seized internal hardware fault confirmed"}
+  },
+  {
+    "text": "Low refrigerant pressure causing reduced cooling efficiency. Temperature slowly rising 0.2 degrees per minute over 40 minutes. Internal refrigerant fault. This is a compressor_failure anomaly.",
+    "metadata": {"type": "compressor_failure", "severity": "medium", "resolution": "repair_on_site", "key_signal": "low refrigerant pressure slow rise internal fault"}
+  },
+  {
+    "text": "Generator failed completely. Total electrical power loss to all vehicle systems including refrigeration. Temperature rose from 4 to 10 degrees in 18 minutes. Not a mechanical compressor fault - electrical supply lost. This is a power_outage anomaly.",
+    "metadata": {"type": "power_outage", "severity": "high", "resolution": "dispatch_backup", "key_signal": "generator failed total electrical loss all systems", "not_confused_with": "compressor_failure which is internal mechanical"}
+  },
+  {
+    "text": "Mains power failure caused complete refrigeration shutdown. Total electrical blackout on vehicle. Temperature rose from 4 to 9 degrees in 15 minutes. Electrical supply interrupted not mechanical fault. This is a power_outage anomaly.",
+    "metadata": {"type": "power_outage", "severity": "high", "resolution": "dispatch_backup", "key_signal": "mains power failure total blackout electrical supply lost"}
+  },
+  {
+    "text": "Main power outage caused refrigeration to stop completely. Total loss of electrical supply. Temperature rose from 4 to 10.5 degrees in 22 minutes. All electrical systems affected. This is a power_outage anomaly.",
+    "metadata": {"type": "power_outage", "severity": "high", "resolution": "dispatch_backup", "key_signal": "main power outage total electrical loss all systems temperature 10.5"}
+  },
+  {
+    "text": "Power surge caused refrigeration unit to restart and fail. Electrical supply disrupted by surge. Temperature rose to 7 degrees during restart cycle. Electrical cause not mechanical. This is a power_outage anomaly.",
+    "metadata": {"type": "power_outage", "severity": "high", "resolution": "dispatch_backup", "key_signal": "power surge electrical disruption restart fail"}
+  },
+  {
+    "text": "Electrical fault caused cooling system shutdown. Power supply interrupted to refrigeration. Temperature rose to 8.5 degrees. Electrical wiring fault not compressor mechanical failure. This is a power_outage anomaly.",
+    "metadata": {"type": "power_outage", "severity": "high", "resolution": "dispatch_backup", "key_signal": "electrical fault wiring power supply interrupted shutdown"}
+  },
+  {
+    "text": "Alternator failure caused battery to drain. Vehicle running on reserve. Refrigeration unit lost power completely after 20 minutes. Total electrical system failure. This is a power_outage anomaly.",
+    "metadata": {"type": "power_outage", "severity": "high", "resolution": "dispatch_backup", "key_signal": "alternator failure battery drained total electrical failure"}
+  },
+  {
+    "text": "Circuit breaker tripped causing total power loss to refrigeration. All electrical circuits affected. Temperature rose from 4 to 9 degrees. Electrical interruption not mechanical compressor fault. This is a power_outage anomaly.",
+    "metadata": {"type": "power_outage", "severity": "high", "resolution": "dispatch_backup", "key_signal": "circuit breaker tripped total power loss electrical interruption"}
+  },
+  {
+    "text": "Fuse blown in main electrical panel. Complete loss of power to refrigeration unit. Temperature rising rapidly. All electrical systems down. This is a power_outage anomaly.",
+    "metadata": {"type": "power_outage", "severity": "high", "resolution": "dispatch_backup", "key_signal": "fuse blown electrical panel complete power loss"}
+  },
+  {
+    "text": "Power failure due to faulty wiring harness. Electrical supply cut to refrigeration. Temperature rose rapidly from 4 to 8 degrees. Electrical cause confirmed not mechanical. This is a power_outage anomaly.",
+    "metadata": {"type": "power_outage", "severity": "high", "resolution": "dispatch_backup", "key_signal": "wiring harness faulty electrical supply cut"}
+  },
+  {
+    "text": "Biological samples 2-8 degrees range. Complete electrical power failure caused refrigeration loss. Temperature rose to 10 degrees. Total power outage not compressor fault. This is a power_outage anomaly.",
+    "metadata": {"type": "power_outage", "severity": "high", "resolution": "dispatch_backup", "key_signal": "total power outage biological samples electrical failure"}
+  },
+  {
+    "text": "Rear door left open during routine inspection. Warm ambient air entering through open door. Temperature rising slowly 0.15 degrees per minute over 20 minutes. Gradual rise from physical door breach. This is a door_left_open anomaly.",
+    "metadata": {"type": "door_left_open", "severity": "medium", "resolution": "notify_driver", "key_signal": "door open warm air entering gradual slow rise"}
+  },
+  {
+    "text": "Door left open during loading at depot. Ambient air entering through open door. Temperature rose gradually from 4 to 6.5 degrees over 15 minutes. Physical door breach gradual rise. This is a door_left_open anomaly.",
+    "metadata": {"type": "door_left_open", "severity": "medium", "resolution": "notify_driver", "key_signal": "loading door open ambient air gradual rise 15 minutes"}
+  },
+  {
+    "text": "Door seal degraded allowing warm air to infiltrate around door frame. Temperature rising slowly 0.5 degrees per minute. No mechanical refrigeration fault. Physical seal breach. This is a door_left_open anomaly.",
+    "metadata": {"type": "door_left_open", "severity": "medium", "resolution": "notify_driver", "key_signal": "door seal degraded warm air infiltration slow gradual rise"}
+  },
+  {
+    "text": "Driver forgot to close door after checking load at checkpoint. Temperature rose from 4 to 6.2 degrees over 18 minutes. Gradual rise from open door. This is a door_left_open anomaly.",
+    "metadata": {"type": "door_left_open", "severity": "medium", "resolution": "notify_driver", "key_signal": "forgot close door checkpoint gradual rise 18 minutes"}
+  },
+  {
+    "text": "Door left ajar during unloading at customer site. Warm air entering slowly through gap. Temperature rose from 4 to 5.5 degrees over 12 minutes. Physical door ajar. This is a door_left_open anomaly.",
+    "metadata": {"type": "door_left_open", "severity": "medium", "resolution": "notify_driver", "key_signal": "door ajar unloading warm air slow rise 12 minutes"}
+  },
+  {
+    "text": "Door forgot to close rear; temperature rose to 6.2 degrees. Driver forgot to close door after checking load. Gradual temperature increase from physical door open. This is a door_left_open anomaly.",
+    "metadata": {"type": "door_left_open", "severity": "medium", "resolution": "notify_driver", "key_signal": "forgot close rear door gradual temperature increase"}
+  },
+  {
+    "text": "Door left open after temperature check at warehouse. Temperature rose from 4 to 5.8 degrees slowly over 10 minutes. Physical door breach allowing ambient air in. This is a door_left_open anomaly.",
+    "metadata": {"type": "door_left_open", "severity": "low", "resolution": "notify_driver", "key_signal": "warehouse door open temperature check gradual slow rise"}
+  },
+  {
+    "text": "Vaccine shipment 2-8 degrees. Door left open during transfer causing temperature deviation. Gradual rise from physical door breach. This is a door_left_open anomaly.",
+    "metadata": {"type": "door_left_open", "severity": "high", "resolution": "notify_driver", "key_signal": "vaccine door open transfer gradual rise"}
+  },
+  {
+    "text": "Blood products 2-6 degrees range. Door left open at hospital loading bay for 22 minutes. Temperature rose to 8 degrees gradually. Physical door not closed. This is a door_left_open anomaly.",
+    "metadata": {"type": "door_left_open", "severity": "high", "resolution": "notify_driver", "key_signal": "hospital loading bay door open 22 minutes gradual rise"}
+  },
+  {
+    "text": "Unloading bay incident. Rear door open during vehicle to storage transfer. Temperature rose from 3.5 to 6.8 degrees gradually over 22 minutes. Physical door breach. This is a door_left_open anomaly.",
+    "metadata": {"type": "door_left_open", "severity": "medium", "resolution": "notify_driver", "key_signal": "unloading transfer door open 22 minutes gradual rise 6.8"}
+  },
+  {
+    "text": "Driver set temperature incorrectly to 0 degrees instead of 4 degrees. Human operator mistake. Corrected after 30 minutes on alert. Wrong setting by driver. This is a driver_error anomaly.",
+    "metadata": {"type": "driver_error", "severity": "medium", "resolution": "contact_driver", "key_signal": "driver set wrong temperature human operator mistake"}
+  },
+  {
+    "text": "Driver ignored temperature alarm for 45 minutes. Deliberate inaction by operator. Temperature rose to 8 degrees. Alarm logs confirm repeated alerts ignored by driver. This is a driver_error anomaly.",
+    "metadata": {"type": "driver_error", "severity": "high", "resolution": "contact_driver", "key_signal": "driver ignored alarm deliberate inaction human operator"}
+  },
+  {
+    "text": "Driver turned off cooling unit by mistake while adjusting cab controls. Human operator error - unit switched off deliberately but incorrectly. Temperature rose from 4 to 9 degrees. This is a driver_error anomaly.",
+    "metadata": {"type": "driver_error", "severity": "high", "resolution": "contact_driver", "key_signal": "driver turned off cooling mistake human error deliberate wrong action"}
+  },
+  {
+    "text": "Driver misread thermostat display and set 14 degrees instead of 4 degrees. Human mistake reading controls. Temperature rose to 7 degrees before error discovered. This is a driver_error anomaly.",
+    "metadata": {"type": "driver_error", "severity": "medium", "resolution": "contact_driver", "key_signal": "driver misread thermostat human mistake wrong setting"}
+  },
+  {
+    "text": "Driver failed to verify door closure after loading. Door left partially open due to human negligence. Not a mechanical fault. This is a driver_error anomaly.",
+    "metadata": {"type": "driver_error", "severity": "medium", "resolution": "contact_driver", "key_signal": "driver failed verify door human negligence not mechanical"}
+  },
+  {
+    "text": "Driver took unauthorised break with engine off for 40 minutes. Refrigeration powered down by human decision. Temperature rose from human action not equipment fault. This is a driver_error anomaly.",
+    "metadata": {"type": "driver_error", "severity": "high", "resolution": "contact_driver", "key_signal": "unauthorised break engine off human decision refrigeration down"}
+  },
+  {
+    "text": "Driver manually overrode automatic cooling settings causing temperature rise to 6.5 degrees. Human intervention wrong action. This is a driver_error anomaly.",
+    "metadata": {"type": "driver_error", "severity": "medium", "resolution": "contact_driver", "key_signal": "manual override human intervention wrong action cooling"}
+  },
+  {
+    "text": "Driver loaded cargo into wrong temperature zone by mistake. Human loading error not equipment fault. This is a driver_error anomaly.",
+    "metadata": {"type": "driver_error", "severity": "high", "resolution": "contact_driver", "key_signal": "wrong zone loading human mistake not equipment fault"}
+  },
+  {
+    "text": "Driver communication failure - did not report observed temperature rise for 2 hours. Negligent delayed reporting by human operator. This is a driver_error anomaly.",
+    "metadata": {"type": "driver_error", "severity": "medium", "resolution": "contact_driver", "key_signal": "delayed reporting human negligence operator"}
+  },
+  {
+    "text": "Driver set thermostat incorrectly; temperature rose to 5.5 degrees. Human operator misread controls and adjusted incorrectly. This is a driver_error anomaly.",
+    "metadata": {"type": "driver_error", "severity": "low", "resolution": "contact_driver", "key_signal": "thermostat misread human operator incorrect adjustment"}
+  },
+  {
+    "text": "Snowstorm delayed delivery and caused temperature rise from 4 to 6.5 degrees. External weather event caused gradual rise. Refrigeration unit functioning normally against harsh weather. No internal fault. This is an extreme_weather anomaly.",
+    "metadata": {"type": "extreme_weather", "severity": "medium", "resolution": "adjust_cooling", "key_signal": "snowstorm external weather event gradual rise no internal fault"}
+  },
+  {
+    "text": "Heatwave caused internal temperature to rise from 4 to 7 degrees in 30 minutes. External ambient 42 degrees overwhelming refrigeration. No mechanical failure inside unit. External environmental cause. This is an extreme_weather anomaly.",
+    "metadata": {"type": "extreme_weather", "severity": "medium", "resolution": "adjust_cooling", "key_signal": "heatwave external ambient high temperature no mechanical failure environmental"}
+  },
+  {
+    "text": "High ambient temperature 40 degrees caused cooling system to struggle. Temperature rose to 7 degrees despite compressor working correctly. External environmental heat load too high. No internal fault. This is an extreme_weather anomaly.",
+    "metadata": {"type": "extreme_weather", "severity": "medium", "resolution": "adjust_cooling", "key_signal": "high ambient external heat compressor working struggle environmental"}
+  },
+  {
+    "text": "Heavy rainfall caused humidity spike and condensation. External weather event. Temperature rose slightly due to latent heat from condensation outside. No internal fault. This is an extreme_weather anomaly.",
+    "metadata": {"type": "extreme_weather", "severity": "low", "resolution": "adjust_humidity", "key_signal": "heavy rainfall humidity condensation external weather no internal fault"}
+  },
+  {
+    "text": "Storm caused external temperature fluctuation. Wind and rain interference with refrigeration external panels. External weather origin. Refrigeration unit intact internally. This is an extreme_weather anomaly.",
+    "metadata": {"type": "extreme_weather", "severity": "low", "resolution": "adjust_cooling", "key_signal": "storm wind rain external interference no internal fault"}
+  },
+  {
+    "text": "Extreme cold external temperature minus 15 degrees. Internal temperature fluctuating. Heating element working against extreme external cold. External environmental cause. This is an extreme_weather anomaly.",
+    "metadata": {"type": "extreme_weather", "severity": "low", "resolution": "adjust_cooling", "key_signal": "extreme cold external minus 15 environmental cause heating struggling"}
+  },
+  {
+    "text": "Desert crossing in 45 degree ambient heat over 3 hours. Refrigeration overwhelmed by sustained external heat load. No mechanical failure inside. External environmental cause. This is an extreme_weather anomaly.",
+    "metadata": {"type": "extreme_weather", "severity": "high", "resolution": "adjust_cooling", "key_signal": "desert heat 45 degrees external environmental refrigeration overwhelmed no failure"}
+  },
+  {
+    "text": "Extreme weather caused gradual temperature rise. External environmental conditions responsible. Cooling unit operating correctly but overwhelmed by outside heat. No internal mechanical fault. This is an extreme_weather anomaly.",
+    "metadata": {"type": "extreme_weather", "severity": "medium", "resolution": "adjust_cooling", "key_signal": "extreme weather gradual rise external environmental no internal mechanical fault"}
+  },
+  {
+    "text": "High ambient external temperature caused cooling system to struggle despite working refrigeration unit. External weather heat load. Temperature rose gradually. This is an extreme_weather anomaly.",
+    "metadata": {"type": "extreme_weather", "severity": "medium", "resolution": "adjust_cooling", "key_signal": "ambient external temperature struggle working refrigeration gradual rise"}
+  },
+  {
+    "text": "Tropical humidity 95 percent. Moisture infiltration around door seals from external environmental conditions. Temperature affected by external environment not internal fault. This is an extreme_weather anomaly.",
+    "metadata": {"type": "extreme_weather", "severity": "low", "resolution": "adjust_humidity", "key_signal": "tropical humidity moisture infiltration external environmental"}
+  },
+  {
+    "text": "GPS signal lost in rural area with no cell towers. Location tracking unavailable. Temperature remained completely stable at 4 degrees. Navigation issue only. No temperature anomaly. This is a gps_blackout anomaly.",
+    "metadata": {"type": "gps_blackout", "severity": "low", "resolution": "manual_tracking", "key_signal": "gps lost rural temperature stable no temperature anomaly navigation only"}
+  },
+  {
+    "text": "GPS blackout in tunnel for 8 minutes. Signal unavailable. Temperature unaffected and stable throughout. Location tracking issue only. Refrigeration normal. This is a gps_blackout anomaly.",
+    "metadata": {"type": "gps_blackout", "severity": "low", "resolution": "manual_tracking", "key_signal": "gps blackout tunnel temperature stable refrigeration normal"}
+  },
+  {
+    "text": "GPS lost due to solar flare interference. Temperature stable throughout. Signal loss only. Cargo integrity maintained. No temperature change. This is a gps_blackout anomaly.",
+    "metadata": {"type": "gps_blackout", "severity": "low", "resolution": "manual_tracking", "key_signal": "solar flare gps lost temperature stable no change"}
+  },
+  {
+    "text": "GPS signal lost in urban canyon between tall buildings. Temperature stable and normal. Navigation affected only. Refrigeration completely unaffected. This is a gps_blackout anomaly.",
+    "metadata": {"type": "gps_blackout", "severity": "low", "resolution": "manual_tracking", "key_signal": "urban canyon gps lost temperature stable refrigeration unaffected"}
+  },
+  {
+    "text": "Satellite outage caused GPS blackout across region. Temperature stable. All vehicles lost location tracking simultaneously. No thermal anomaly at all. This is a gps_blackout anomaly.",
+    "metadata": {"type": "gps_blackout", "severity": "low", "resolution": "manual_tracking", "key_signal": "satellite outage gps blackout temperature stable no thermal anomaly"}
+  },
+  {
+    "text": "GPS antenna damaged. Signal intermittent. Temperature completely unaffected and stable. Hardware communication fault only. No temperature impact. This is a gps_blackout anomaly.",
+    "metadata": {"type": "gps_blackout", "severity": "low", "resolution": "manual_tracking", "key_signal": "gps antenna damaged temperature stable communication fault no temperature impact"}
+  },
+  {
+    "text": "GPS module software crashed and rebooting. Temperature normal and stable. Tracking unavailable temporarily. Refrigeration completely unaffected. This is a gps_blackout anomaly.",
+    "metadata": {"type": "gps_blackout", "severity": "low", "resolution": "manual_tracking", "key_signal": "gps software crash temperature stable tracking unavailable refrigeration unaffected"}
+  },
+  {
+    "text": "GPS jamming detected near restricted zone. Signal blocked. Temperature stable. Location tracking only affected. No refrigeration impact. This is a gps_blackout anomaly.",
+    "metadata": {"type": "gps_blackout", "severity": "medium", "resolution": "manual_tracking", "key_signal": "gps jamming signal blocked temperature stable no refrigeration impact"}
+  },
+  {
+    "text": "GPS signal lost crossing international border. Coverage gap in remote area. Temperature stable throughout. Navigation switch to manual. This is a gps_blackout anomaly.",
+    "metadata": {"type": "gps_blackout", "severity": "low", "resolution": "manual_tracking", "key_signal": "border coverage gap gps lost temperature stable manual navigation"}
+  },
+  {
+    "text": "GPS blackout during underground motorway section. 15 minute signal loss. Temperature stable. Tracking resumed on exit. No thermal anomaly. This is a gps_blackout anomaly.",
+    "metadata": {"type": "gps_blackout", "severity": "low", "resolution": "manual_tracking", "key_signal": "underground motorway gps blackout temperature stable no thermal anomaly"}
+  }
+]
