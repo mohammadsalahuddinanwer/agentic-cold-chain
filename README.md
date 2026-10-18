@@ -83,7 +83,7 @@ make_figures.py                 regenerates Figures 2 and 3 from outputs/
 
 outputs/                        every result file behind the paper
 figures/                        the figures as they appear in the paper
-data/raw/                       the three public source datasets, with provenance
+data/raw/                       three public source datasets, with provenance
 data/knowledge_base/            retrieval store and diagnosis test sets
 ```
 
@@ -106,9 +106,12 @@ Resolver, the baselines and every ablation and sensitivity experiment run on CPU
 
 ### Data
 
-The three public source datasets are in `data/raw/`. The synthetic training
-arrays derived from them are **not** tracked — `cold_chain_X.npy` alone is about
-324 MB, over GitHub's per-file limit. Regenerate them with:
+Three public source datasets are in `data/raw/`; see `data/raw/README.md` for
+what each one was and was not used for. The generator does **not** read them —
+its anomaly parameters come from Loisel et al. (2021) and WHO 2–8 °C storage
+guidance, and are declared inline in `generate_cold_chain_training_data.py`. The
+synthetic training arrays it writes are not tracked either — `cold_chain_X.npy`
+alone is about 324 MB, over GitHub's per-file limit. Regenerate them with:
 
 ```bash
 python generate_cold_chain_training_data.py
@@ -255,10 +258,10 @@ surrogate. The GA behind the Sect. 5.6 results lives inside
 
 Stated here as they are in the paper, not buried.
 
-- **The data is synthetic.** The generator is calibrated on three real public
-  datasets and to WHO 2–8 °C storage guidelines, but absolute costs should not
-  be read as operational forecasts. What transfers is the comparison between
-  conditions.
+- **The data is synthetic.** The generator is calibrated to WHO 2–8 °C storage
+  guidance and to the anomaly parameters reported by Loisel et al. (2021) — not
+  to measured operational data. Absolute costs should not be read as operational
+  forecasts. What transfers is the comparison between conditions.
 - **Retrieval did not help.** The hypothesis behind RQ2 is not supported on this
   test set. The retrieval store holds only 60 past cases.
 - **A keyword classifier matches the language model** on diagnosis accuracy. The
@@ -293,5 +296,6 @@ Copyright (c) 2026 Mohammad Salahuddin. All rights reserved. No open-source lice
 granted — see `COPYRIGHT.md`. The repository is public so the results can be
 inspected and reproduced; for any other use, please ask.
 
-The three datasets in `data/raw/` are redistributed under their own terms; see
-`data/raw/README.md` for provenance.
+The three datasets in `data/raw/` remain under their original licences, which
+are the uploaders' to set, not this repository's; see `data/raw/README.md` for
+provenance and for the licence check that must happen before they are pushed.

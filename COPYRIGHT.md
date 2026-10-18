@@ -21,6 +21,9 @@ repository" button on the repository page.
 
 ## Third-party components
 
-The datasets in `data/raw/` are redistributed under their own terms, recorded in
-`data/raw/README.md`. The Python libraries this project depends on carry their
+Any datasets present in `data/raw/` remain the property of their original
+publishers and are governed by those publishers' licences, not by this notice.
+`data/raw/README.md` records each one's provenance and the licence check to be
+completed before it is published here. Nothing in this repository grants rights
+over third-party data. The Python libraries this project depends on carry their
 own licences, listed in `requirements.txt`.
