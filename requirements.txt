@@ -12,6 +12,7 @@ transformers
 datasets
 accelerate
 peft
+bitsandbytes           # required when LLAMA_LOAD_IN_8BIT is True (CUDA only)
 
 # Retrieval / Diagnosis Agent
 sentence-transformers
@@ -23,9 +24,8 @@ openai                 # optional GPT fallback in core/llm_wrapper.py
 # Resolver Agent
 deap
 
-# Utilities and UI
+# Utilities and plotting
 python-dotenv
-streamlit              # app.py demo interface only
 matplotlib
 seaborn
 tqdm

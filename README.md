@@ -277,12 +277,31 @@ Stated here as they are in the paper, not buried.
 ## Live demo
 
 ```bash
-python app.py --mode demo
-streamlit run app.py
+python app.py --mode run
 ```
 
 Runs the full four-agent pipeline on one simulated cargo and prints the Monitor
-alarm, the diagnosis, the Resolver plan and the generated customer message.
+alarm, the diagnosis, the Resolver plan and the generated customer message. The
+other modes are `generate_data`, `train_monitor`, `evaluate` and `test_llm`, the
+last being a quick check that the model loads.
+
+This is the heaviest thing in the repository to run, because it loads the real
+model:
+
+- **Hugging Face access** to `meta-llama/Llama-3.1-8B-Instruct`, which is gated.
+  Accept the licence on the model page and put your token in `.env` (see
+  `.env.example`). The first run downloads about 16 GB.
+- **A CUDA GPU.** `Config.LLAMA_LOAD_IN_8BIT = True` needs `bitsandbytes`, which
+  needs CUDA. To run on CPU, set `LLAMA_LOAD_IN_8BIT = False` in `config.py` and
+  expect minutes per generation.
+- The Monitor checkpoint and the `data/raw/` CSV are both included here. The
+  demo uses that CSV's numeric columns only as a source of realistic sensor
+  rows, into which it injects an anomaly; no reported result depends on it
+  (Sect. 3.2 and `data/raw/README.md`).
+
+**Reproducing the paper's numbers needs none of the above.**
+`verify_paper_numbers.py` re-checks all 72 claims from `outputs/` with four pip
+packages and no GPU.
 
 ---
 
